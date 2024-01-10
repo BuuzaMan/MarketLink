@@ -16,3 +16,7 @@
   font-family: "SFPro";
   src: url("../src/fonts/SFPRODISPLAYREGULAR.OTF");
 }
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../src/fonts/coolvetica\ rg.ttf");
+}

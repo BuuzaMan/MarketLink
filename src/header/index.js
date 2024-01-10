@@ -1,6 +1,7 @@
 import React from 'react'
 import Whatsapp from '../svg/whatsapp';
 import Telegram from '../svg/telegram';
+import CalcBtn from '../calcCostBtn';
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
            </div>
            <button><Whatsapp /></button>
            <button><Telegram /></button>
-           <button className='bg-black text-[#FFFFFF] w-[234px] h-[56px] rounded-[229px] mt-[16px] mr-[18px] ml-[12px] font-fira text-[17.279px] font-bold leading-[1.08rem]'>Рассчитать стоимость</button>
+           <div className='mt-[16px] mr-[18px] ml-[12px]'><CalcBtn /></div>
         </div>
     </header>
   )
