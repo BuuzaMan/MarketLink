@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@font-face {
+  font-family: "Gothic";
+  src: url("../src/fonts/gothic.ttf");
+}
+@font-face {
+  font-family: "Macan";
+  src: url("../src/fonts/Macan-Stencil-Trial-Regular.otf");
+}
+@font-face {
+  font-family: "SFPro";
+  src: url("../src/fonts/SFPRODISPLAYREGULAR.OTF");
 }
