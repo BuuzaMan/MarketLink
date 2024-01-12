@@ -1,5 +1,5 @@
 import React from 'react'
-import Circle from './circle';
+import Circle from '../circle';
 
 const Corner = () => {
   return (
