@@ -41,7 +41,7 @@ let Cards = () => {
             <div className='flex absolute mt-[230px] blur-[90px]'><YellowCircle /></div>
           </div>
           <div className='flex relative w-[592px] h-[472px] rounded-[16px] bg-orange-300'>
-            <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] tracking-[-.05em] mt-[43px] ml-[40px]'> Личный менеджер</div>
+            <div><img src="/images/manager.png" alt="manager" /></div>
           </div>
         </div>
         <div className='flex space-x-6'>

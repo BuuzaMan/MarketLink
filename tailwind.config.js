@@ -8,7 +8,8 @@ module.exports = {
         macan: ["Macan", "sans-serif"],
         sfpro: ["SFPRO", "sans-serif"],
         fira: ["Fira Sans", "sans-serif"],
-        coolvetica: ["Coolvetica", "sans-serif"]
+        coolvetica: ["Coolvetica", "sans-serif"],
+        lato: ["Lato", "sans-serif"]
       }
     },
   },
