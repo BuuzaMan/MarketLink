@@ -26,8 +26,8 @@ let Calculator = () => {
             <div className='w-[157px] h-[52px] ml-[27px] font-sfpro text-[17.438px] font-medium leading-[1.625rem] text-left mt-[24px] z-40'>Примерная стоимость без НДС</div>
             <div className='mt-[20px] ml-[395px] z-40'><Button /></div>
           </div>
-          <div className='flex absolute z-0 top-[207px] left-[173px] blur-[900px]'><BigBlueEl /></div>
-          <div className='flex absolute z-10 top-[200px] left-[450px] blur-[400px]'><PinkBig /></div>
+          <div className='flex absolute z-0 top-[207px] left-[173px] blur-[800px]'><BigBlueEl /></div>
+          <div className='flex absolute z-20 top-[200px] left-[200px] blur-[300px]'><PinkBig /></div>
         </div>
     </div>
   )
