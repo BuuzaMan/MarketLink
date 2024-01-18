@@ -3,6 +3,7 @@ import Calculator from './details/calculator/Calculator';
 import FullFilment from './details/full-filment';
 import Process from './details/Process';
 import Tariffs from './details/tariffs';
+import Logistics from './details/logistics';
 
 const MiddleBanner = () => {
   return (
@@ -11,6 +12,7 @@ const MiddleBanner = () => {
         <FullFilment />
         <Process />
         <Tariffs />
+        <Logistics />
     </div>
   )
 };
