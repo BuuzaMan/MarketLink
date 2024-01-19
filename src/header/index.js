@@ -19,8 +19,8 @@ const Header = () => {
                 <button className='flex'>О нас</button>
                 <button className='flex'>Контакты</button>
            </div>
-           <button><Whatsapp /></button>
-           <button><Telegram /></button>
+           <button className='ml-[43px]'><Whatsapp /></button>
+           <button className='ml-[15px]'><Telegram /></button>
            <div className='mt-[16px] mr-[18px] ml-[12px]'><CalcBtn /></div>
         </div>
     </header>

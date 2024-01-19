@@ -1,6 +1,6 @@
 const Telegram = () => {
     return (
-        <div className="w-[36px] h-[36px] ml-[10px]">
+        <div className="w-[36px] h-[36px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
                 <g clip-path="url(#clip0_104_170)">
                 <path d="M18.8082 36.7123C28.8553 36.7123 37 28.5676 37 18.5205C37 8.47347 28.8553 0.328735 18.8082 0.328735C8.76119 0.328735 0.616455 8.47347 0.616455 18.5205C0.616455 28.5676 8.76119 36.7123 18.8082 36.7123Z" fill="url(#paint0_linear_104_170)"/>

@@ -27,13 +27,13 @@ let Tariffs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col w-[284px] h-[340px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+                    <div className='flex flex-col relative w-[284px] h-[340px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
                         <div className='font-sfpro font-medium text-[40px] leading-[2.5rem] -tracking-[.05em] mt-[23px] ml-[26px] w-[165px]'>Упаковка под ключ</div>
                         <div className='flex'>
                             <div className='flex mt-[73px]'><img src='images/mlbox.png' alt='dlvrbox' /></div>
                             <div className='flex absolute -rotate-90 -left-[27px] bottom-[102px] text-white'>
-                                <div className='font-gothic font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em]'>MARKET</div>
-                                <div className='font-macan font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em]'>LlNK</div>
+                                <div className='font-gothic font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em] font-white'>MARKET</div>
+                                <div className='font-macan font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em] font-white'>LlNK</div>
                             </div>
                             <div className='flex flex-col w-[150px] mt-[116px] ml-[48.8px]'>
                                 <div className='flex'>

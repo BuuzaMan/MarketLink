@@ -1,5 +1,6 @@
 import './App.css';
 import Wrapper from './Wrapper';
+import BottomBanner from './bottomBanner';
 import Header from './header';
 import MiddleBanner from './middleBanner';
 import UpperBanner from './upperBanner';
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <UpperBanner />
       <MiddleBanner />
+      <BottomBanner />
     </Wrapper>
   );
 }
