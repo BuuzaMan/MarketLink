@@ -28,7 +28,7 @@ const Accordion = () => {
             {section.title}
           </button>
           {openSection === index && (
-            <div className="bg-white">
+            <div className="">
               <p className='className="font-normal text-[48px] text-[#828282] leading-[3rem] -tracking-[.06em] mt-[28px]'>{section.content}</p>
             </div>
           )}
