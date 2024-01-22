@@ -21,3 +21,7 @@
   font-family: "Coolvetica";
   src: url("../src/fonts/coolvetica\ rg.ttf");
 }
+
+body {
+  background-color: #F5F5F7
+}

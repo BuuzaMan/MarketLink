@@ -6,7 +6,7 @@ import DeliveryCar from '../../../../svg/deliveryCar';
 const Service = () => {
   return (
     <div className='w-[1208px] grid grid-cols-4 gap-x-6 mt-[40px]'>
-        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-white shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[33px] ml-[32px]'><GradientBox /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='w-[180px] h-[48px] font-bold text-[24px] leading-[1.5rem] -tracking-[.03em]'>Забор товара день в день</div>
@@ -17,7 +17,7 @@ const Service = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-white shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[33px] ml-[32px]'><GradientBox /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='w-[180px] h-[48px] font-bold text-[24px] leading-[1.5rem] -tracking-[.03em]'>Упаковка и переупаковка</div>
@@ -29,7 +29,7 @@ const Service = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-white shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-[#FFFFFF]'>
             <Mark />
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='w-[180px] h-[48px] font-bold text-[24px] leading-[1.5rem] -tracking-[.03em]'>Маркировка товара</div>
@@ -40,7 +40,7 @@ const Service = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-white shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col w-[284px] h-[473px] rounded-[12.84px] bg-[#FFFFFF]'>
             <DeliveryCar />
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='w-[180px] h-[48px] font-bold text-[24px] leading-[1.5rem] -tracking-[.03em]'>Доставка на маркетплейсы</div>

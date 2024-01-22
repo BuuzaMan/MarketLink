@@ -13,7 +13,7 @@ let Calculator = () => {
     <div className='flex container flex-col w-[1198px] mt-[120px] mx-auto items-center '>
         <div className='flex font-sfpro font-medium text-[64px] leading-[4rem]'>Рассчитать стоимость поставки</div>
         <div className='flex flex-col relative overflow-hidden items-start w-[1198px] h-[578px] rounded-2xl mt-[40px]'>
-          <div className='flex flex-row rounded-xl bg-[#FEFEFE] w-[1145px] h-[450px] mt-[25px] ml-[27px] z-40'>
+          <div className='flex flex-row rounded-xl bg-[#FEFEFE] w-[1145px] h-[450px] mt-[25px] ml-[27px] z-40 #FEFEFE'>
             <First />
             <Second />
             <Third />

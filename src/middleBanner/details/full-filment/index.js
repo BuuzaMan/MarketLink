@@ -14,7 +14,7 @@ const FullFilment = () => {
         </div>
         <div className='flex flex-col w-[1208px] h-[1183px] mt-[40px]'>
             <div className='flex'>
-                <div className='flex flex-col relative overflow-hidden w-[695px] h-[652px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)] rounded-2xl'>
+                <div className='flex flex-col relative overflow-hidden w-[695px] h-[652px] bg-[#FFFFFF] rounded-2xl'>
                     <div className='font-sfpro font-medium text-[48px] leading-[3rem] w-[612px] h-[192px] mt-[38px] ml-[46px]'>Организация поставки и забота о качественной приемке и упаковке товара съедает много времени</div>
                     <div className='font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] mt-[24px] ml-[52px]'>Вам больше не придется переживать и отвлекаться по мелочам.</div>
                     <div className='flex mt-[31.37px] ml-[52px] z-10'><img src='images/wts.png' alt='whatsup' /></div>
@@ -22,7 +22,7 @@ const FullFilment = () => {
                     <div className='flex absolute top-[300px] left-[480px] blur-[150px] z-0'><BlueCircle /></div>
                     <div className='flex absolute top-[452px] -left-[150px] z-0 blur-[150px]'><YellowCircle /></div>
                 </div>
-                <div className='flex flex-col w-[489px] h-[652px] rounded-2xl ml-[24px] relative overflow-hidden shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+                <div className='flex flex-col w-[489px] h-[652px] rounded-2xl ml-[24px] relative overflow-hidden bg-[#FFFFFF]'>
                     <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] ml-[49px] mt-[38px] w-[410px]'>Персональный менеджер всегда на связи</div>
                     <div className='flex font-sfpro font-normal text-[15px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] w-[369px] h-[84px] ml-[49px] mt-[20px]'>Ваши личный ассистент в организации поставки, который отвечает в течении 15 минут и всегда в курсе ваших логистических процессов.</div>
                     <div className='flex absolute mt-[235px] z-10'><img src='/images/woman.png' alt='manager' /></div>
@@ -33,7 +33,7 @@ const FullFilment = () => {
                     <div className='flex absolute -rotate-90 top-[450px] left-[250px] blur-[100px]'><YellowCircle /></div>
                 </div>
             </div>
-            <div className='flex flex-col w-[1208px] h-[464px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)] mt-[24px]'>
+            <div className='flex flex-col w-[1208px] h-[464px] rounded-2xl bg-[#FFFFFF] mt-[24px]'>
                 <div className='flex w-[300px] h-[81px] mt-[49px] ml-[54px] overflow-hidden -space-x-2'>
                     <img className='inline-block rounded-full ring-[4px] ring-white h-[81px] w-[81px]' src='/images/girl2.png' alt='secong'></img>
                     <img className='inline-block rounded-full ring-[4px] ring-white h-[81px] w-[81px]' src='/images/man.png' alt='man'></img>

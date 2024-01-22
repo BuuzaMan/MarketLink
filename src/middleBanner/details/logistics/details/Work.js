@@ -7,7 +7,7 @@ import Cards from '../../../../svg/cards';
 const Work = () => {
   return (
     <div className='grid grid-cols-4 w-[1208px] h-[356px] mt-[24px] gap-x-6'>
-        <div className='w-[284px] h-[356px] rounded-[12.84px] shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='w-[284px] h-[356px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[31px] ml-[32px]'><GradientBox /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='text-[24px] font-bold leading-[1.5rem] -tracking-[.03em]'>Прием и обработка возвратов</div>
@@ -17,7 +17,7 @@ const Work = () => {
                 </div>
             </div>
         </div>
-        <div className='w-[284px] h-[356px] rounded-[12.84px] shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='w-[284px] h-[356px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[31px] ml-[32px]'><Camera /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='text-[24px] font-bold leading-[1.5rem] -tracking-[.03em]'>Организуем фотосессию</div>
@@ -27,7 +27,7 @@ const Work = () => {
                 </div>
             </div>
         </div>
-        <div className='w-[284px] h-[356px] rounded-[12.84px] shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='w-[284px] h-[356px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[31px] ml-[32px]'><LoadBox /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='text-[24px] font-bold leading-[1.5rem] -tracking-[.03em] w-[150px]'>Забор самовыкупов</div>
@@ -37,7 +37,7 @@ const Work = () => {
                 </div>
             </div>
         </div>
-        <div className='w-[284px] h-[356px] rounded-[12.84px] shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)]'>
+        <div className='w-[284px] h-[356px] rounded-[12.84px] bg-[#FFFFFF]'>
             <div className='mt-[31px] ml-[32px]'><Cards /></div>
             <div className='mt-[24px] ml-[32px] font-sfpro'>
                 <div className='text-[24px] font-bold leading-[1.5rem] -tracking-[.03em] w-[220px]'>Оформление карточки товара</div>

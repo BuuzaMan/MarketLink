@@ -10,7 +10,7 @@ import Check from '../../../../svg/check';
 const Checking = () => {
   return (
     <div className='flex w-[1208px] mt-[24px] gap-x-[24px]'>
-        <div className='flex flex-col w-[589px] h-[532px] rounded-2xl shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)] font-sfpro'>
+        <div className='flex flex-col w-[589px] h-[532px] rounded-2xl bg-[#FFFFFF] font-sfpro'>
             <div className='w-[440px] mt-[30px] ml-[40px] font-medium text-[48px] leading-[3rem] -tracking-[.06em]'>Внимательный пересчет и проверка на брак</div>
             <div className='grid grid-cols-2 w-[529px] mt-[20px] ml-[38px] gap-x-[11px] gap-y-[13px]'>
                 <div className='w-[259px] h-[140px] rounded-[10px] shadow-[0px_3px_6.7px_0px_rgba(7,22,61,0.12)]'>
@@ -31,7 +31,7 @@ const Checking = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col bg-[#FEFEFE] rounded-2xl shadow-[0px_1px_10px_0px_rgba(7,22,61,0.12)] w-[589px] h-[532px]'>
+        <div className='flex flex-col bg-[#FEFEFE] rounded-2xl bg-[#FFFFFF] w-[589px] h-[532px]'>
             <div className='flex mt-[30px] ml-[34px]'>
                 <div className='font-sfpro font-medium text-[48px] leading-[3rem]'>Услуги склада</div>
                 <div className='flex mt-[13px] ml-[20px] rounded-[69.732px] w-[176px] h-[28.431px] bg-gradient-to-r from-[#EB1988] to-[#005AF9] font-sfpro font-bold text-[10.8px] text-white leading-[0.88rem] tracking-[.027em] items-center justify-center'>3 дня хранения бесплатно</div>

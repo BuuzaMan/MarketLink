@@ -8,7 +8,7 @@ import BigYellowCircle from '../../../../svg/BigYellowCircle';
 let Grid = () => {
   return (
     <div className='flex grid grid-cols-2 w-[1208px] h-[500px] mt-[40px] gap-x-6 gap-y-6 items-center justify-center'>
-        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
             <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] w-[200px] mt-[45px] ml-[46px] z-40'>Работаем “в белую”.</div>
             <div className='flex z-40 flex-col mt-[125.27px] ml-[42px] font-sfpro font-normal text-[26.488px] text-[#4F4F4F] leading-[2.152rem] gap-y-[20.59px] z-30'>
                 <div className='flex w-[144.832px] h-[60.813px] rounded-[13.244px] bg-white shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)] items-center justify-center'>Договор</div>
@@ -20,7 +20,7 @@ let Grid = () => {
             <div className='flex absolute top-[380px] left-[500px] blur-[237px] z-10'><BlueCircle /></div>
             <div className='flex absolute top-[350px] left-[420px] blur-[237px] z-10'><PinkCircle /></div>
         </div>
-        <div className='flex flex-col relative w-[589px] h-[532px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col relative w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
           <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] mt-[45px] ml-[55px] -tracking-[.06em]'>Отчитываемся на всех этапах работы.</div>
             <div className='flex relative w-[482px] h-[184px] mt-[57px] ml-[54px] rounded-[11px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
               <div className='w-[393px] h-[201px] mt-[8.45px] ml-[12.67px] font-sfpro font-normal text-[19.91px] leading-[1.672rem]'>
@@ -44,7 +44,7 @@ let Grid = () => {
               <div className='absolute -top-[150px] left-[350px] z-0 blur-[150px]'><BigYellowCircle /></div>
             </div>
         </div>
-        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
           <div className='flex flex-col mt-[45px] ml-[46px]'>
             <div className='font-sfpro font-medium text-[48px] leading-[3rem] w-[349px] h-[96px] -tracking-[.06em]'>Чёткое техзадание</div>
             <div className='font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] mt-[16px] w-[256px] h-[42px]'>Работаем по собственной форме ТЗ, чтобы ничего не упустить</div>
@@ -66,7 +66,7 @@ let Grid = () => {
               </div>
             </div>
           </div>
-          <div className='flex absolute bg-white w-[513px] h-[408px] z-10 rounded-t-[10px] ml-[54px] mt-[277px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'></div>
+          <div className='flex absolute bg-white w-[513px] h-[408px] z-10 rounded-t-[10px] ml-[54px] mt-[277px] bg-[#FEFEFE]'></div>
         </div>
         <div className='flex flex-col overflow-hidden w-[589px] h-[532px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
           <div className='mt-[45px] ml-[55px]'>

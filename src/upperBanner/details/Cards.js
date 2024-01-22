@@ -12,7 +12,7 @@ let Cards = () => {
   return (
     <div className='flex flex-wrap  h-[1053px] w-[1208px] space-y-[22px] mt-[79px]'>
         <div className='flex space-x-6 z-40'>
-          <div className='flex flex-col relative w-[592px] h-[472px] rounded-[16px] bg-white overflow-hidden shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+          <div className='flex flex-col relative w-[592px] h-[472px] rounded-[16px] bg-white overflow-hidden bg-[#FFFFFF]'>
             <div className='flex font-sfpro font-medium text-[48px] mt-[43px] ml-[46px] leading-[3rem] tracking-[-.05em]'>25 видов услуг</div>
             <div className='z-40'>
               <div className='flex rounded-[24px] bg-[#FCFDFF] w-[494px] h-[118px] ml-[51px] mt-[62px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
@@ -41,7 +41,7 @@ let Cards = () => {
             <div className='flex absolute left-[250px] top-[275px] blur-[100px]'><PinkCircle /></div>
             <div className='flex absolute mt-[230px] blur-[90px]'><YellowCircle /></div>
           </div>
-          <div className='flex relative overflow-hidden flex-col w-[592px] h-[472px] rounded-[16px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+          <div className='flex relative overflow-hidden flex-col w-[592px] h-[472px] rounded-[16px] bg-[#FFFFFF]'>
             <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] mt-[43px] ml-[40px] z-10'>Личный менеджер</div>
             <div className='flex absolute w-[181px] h-[71px] rounded-[709.18px] top-[130px] left-[355px] rotate-[5.153deg] bg-white z-30'>
               <div className='ml-[5px] mt-[5px]'>
@@ -59,7 +59,7 @@ let Cards = () => {
           </div>
         </div>
         <div className='flex space-x-6'>
-          <div className='flex flex-col relative overflow-hidden w-[387px] h-[559px] rounded-[16px] bg-white shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+          <div className='flex flex-col relative overflow-hidden w-[387px] h-[559px] rounded-[16px] bg-[#FFFFFF]'>
             <div className='flex font-sfpro text-[48px] font-medium leading-[3rem] tracking-[-.05em] mt-[36px] ml-[27px]'>Ежедневные поставки на маркетплейсы</div>
             <div className='flex z-40'>
               <div className='ml-[37px] mt-[34px]'><img src="/images/mainPhone.png" alt="phone" /></div>
@@ -76,7 +76,7 @@ let Cards = () => {
             <div className='flex font-sfpro text-[48px] font-medium leading-[3rem] tracking-[-.05em] ml-[31px] mt-[36px]'>FBO и FBS</div>
             <div className='flex absolute mt-[87px]'><img src="/images/box.png" alt="box" /></div>
           </div>
-          <div className='flex flex-col relative w-[387px] h-[559px] rounded-[16px] bg-white overflow-hidden shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+          <div className='flex flex-col relative w-[387px] h-[559px] rounded-[16px] bg-white overflow-hidden bg-[#FFFFFF]'>
             <div className='flex flex-col mt-[36px] ml-[31px] z-40'>
               <div className='flex font-sfpro text-[48px] font-medium leading-[3rem] tracking-[-.05em]'>36 часов</div>
               <div className='flex font-sfpro text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] mt-[12px] w-[274px]'>среднее время от поступления заявки до поставки.</div>

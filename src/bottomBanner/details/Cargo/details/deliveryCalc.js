@@ -8,7 +8,7 @@ import BigBlueCircle from '../../../../svg/bigBlueCircle';
 
 const DeliveryCalc = () => {
   return (
-    <div className='w-[592px] h-[756px] rounded-2xl relative overflow-hidden shadow-[0_3px_6.7px_4px_rgba(7,22,61,0.05);]'>
+    <div className='w-[592px] h-[756px] rounded-2xl relative overflow-hidden bg-[#FFFFFF]'>
         <div className='flex flex-col mt-[31px] ml-[41px]'>
             <div className='w-[411px] h-[96px] font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em]'>Калькулятор доставки из Китая</div>
             <div className='mt-[45px] font-sfpro font-bold text-[24px] leading-[1.95rem] -tracking-[.03em] h-[42.56px] w-[274px]'>Информация о грузе</div>
