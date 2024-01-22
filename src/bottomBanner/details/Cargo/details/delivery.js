@@ -5,7 +5,7 @@ const Delivery = () => {
   return (
     <div className='flex flex-col w-[592px] h-[756px] rounded-2xl relative overflow-hidden z-40'>
         <div className='flex flex-col mt-[31px] ml-[37px]'>
-            <div className='w-[488px] h-[192px] font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] z-40'>Ответственная доставка из Китая в Россию с гарантией качества и сроков.</div>
+            <div className='w-[450px] h-[192px] font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] z-40'>Ответственная доставка из Китая в Россию с гарантией качества и сроков.</div>
             <div className='flex rounded-[32px] bg-gradient-to-r from-[#EB1988] to-[#005AF9] w-[337px] h-[56px] items-center justify-center font-sfpro font-bold text-[24px] leading-[1.95rem] -tracking-[.03em] text-white mt-[40px] z-40'>Грузы от 1кг до 100 тонн.</div>
             <div className='flex flex-col mt-[192px] gap-y-[16px] z-40'>
                 <div className='flex w-[515px] h-[72px] shadow-[0_3px_6.7px_0px_rgba(7,22,61,0.05);] border-[1px] border-[#F0F0F0] rounded-[10px] bg-white'>
@@ -32,7 +32,7 @@ const Delivery = () => {
                 </div>
             </div>
         </div>
-        <div className='absolute w-[1802px] h-[815px] -top-[300px] -left-[600px] z-0'><img src='images/sky.png' alt='sky' /></div>
+        <div className='absolute w-[1802px] h-[815px] -top-[300px] -left-[600px] z-0 saturate-[.65] brightness-[1.30]'><img src='images/sky.png' alt='sky' /></div>
         <div className='absolute w-[1257px] h-[676px] z-0 top-[275px]'><img src='images/containers.png' alt='cargo' /></div>
     </div>
   )
