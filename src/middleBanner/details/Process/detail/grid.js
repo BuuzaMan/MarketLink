@@ -68,7 +68,7 @@ let Grid = () => {
           </div>
           <div className='flex absolute bg-white w-[513px] h-[408px] z-10 rounded-t-[10px] ml-[54px] mt-[277px] bg-[#FEFEFE]'></div>
         </div>
-        <div className='flex flex-col overflow-hidden w-[589px] h-[532px] rounded-2xl shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
+        <div className='flex flex-col overflow-hidden w-[589px] h-[532px] rounded-2xl bg-white'>
           <div className='mt-[45px] ml-[55px]'>
             <div className='font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] w-[400px] h-[96px]'>Без скрытых платежей</div>
             <div className='font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] w-[357px] h-[42px] mt-[16px]'>Вы знаете конечную цену до того, как мы приступаем к обработке вашей заявки.</div>
