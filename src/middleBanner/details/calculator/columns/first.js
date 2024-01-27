@@ -13,6 +13,26 @@ const First = () => {
             />
             </div>
         </div>
+        <div className='mt-[24px] w-[336px]'>
+            <div className='flex font-lato font-bold text-[13px] leading-[1.118rem]'>Укажите параметры товара, см</div>
+            <div className='flex w-[336px] justify-between mt-[8px]'>
+                <input
+                    type='text'
+                    className='w-[100px] h-[42.2px] rounded-md border-[0.813px] border-[#E8E8E8] bg-[#FAFAFA] px-5 text-[14.63px] leading-[1.321rem] text-[#262C31]'
+                    placeholder='Длина'
+                />
+                <input
+                    type='text'
+                    className='w-[100px] h-[42.2px] rounded-md border-[0.813px] border-[#E8E8E8] bg-[#FAFAFA] px-5 text-[14.63px] leading-[1.321rem] text-[#262C31]'
+                    placeholder='Высота'
+                />
+                <input
+                    type='text'
+                    className='w-[100px] h-[42.2px] rounded-md border-[0.813px] border-[#E8E8E8] bg-[#FAFAFA] px-5 text-[14.63px] leading-[1.321rem] text-[#262C31]'
+                    placeholder='Ширина'
+            />
+            </div>
+        </div>
         <div className='mt-[24px]'>
             <div className='flex font-lato font-bold text-[13px] leading-[1.118rem]'>Потребуется ли забор товара(Карго/Рынок)?</div>
             <div className='flex w-[336px] h-[43px] mt-[8px] space-x-[8px]'>
