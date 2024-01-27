@@ -37,11 +37,11 @@ const DeliveryCalc = () => {
               </div>
             </div>
             <div className='font-sfpro font-bold text-[24px] leading-[1.95rem] -tracking-[.03em] mt-[31px]'>Примерная стоимость</div>
-            <div className='flex mt-[10px] font-sfpro font-bold z-40'>
+            <div className='flex mt-[10px] font-sfpro font-bold z-30'>
               <div className='text-[40px] leading-[2.5rem] -tracking-[.05em] mt-[22px]'>от&nbsp;</div>
               <div className='text-[64px] leading-[4rem] -tracking-[.05em]'>44,990₽</div>
             </div>
-            <div className='mt-[41px] z-40'><CostButton /></div>
+            <div className='mt-[41px] z-30'><CostButton /></div>
             <div className='absolute top-[450px] -left-[300px] blur-[237px] z-0'><BigYellowCircle /></div>
             <div className='absolute top-[500px] left-[120px] blur-[237px] z-10'><PinkCircle /></div>
             <div className='absolute z-0 top-[64px] left-[1px] z-0'><BigBlueCircle /></div>

@@ -9,7 +9,7 @@ let Grid = () => {
   return (
     <div className='flex grid grid-cols-2 w-[1208px] h-[500px] mt-[40px] gap-x-6 gap-y-6 items-center justify-center'>
         <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
-            <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] w-[200px] mt-[45px] ml-[46px] z-40'>Работаем “в белую”.</div>
+            <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] -tracking-[.06em] w-[200px] mt-[45px] ml-[46px] z-40'>Работаем “в белую”</div>
             <div className='flex z-40 flex-col mt-[125.27px] ml-[42px] font-sfpro font-normal text-[26.488px] text-[#4F4F4F] leading-[2.152rem] gap-y-[20.59px] z-30'>
                 <div className='flex w-[144.832px] h-[60.813px] rounded-[13.244px] bg-white shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)] items-center justify-center'>Договор</div>
                 <div className='flex w-[197.146px] h-[60.488px] rounded-[13.244px] bg-white shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)] items-center justify-center'>Акты приема</div>
@@ -21,7 +21,7 @@ let Grid = () => {
             <div className='flex absolute top-[350px] left-[420px] blur-[237px] z-10'><PinkCircle /></div>
         </div>
         <div className='flex flex-col relative w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
-          <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] mt-[45px] ml-[55px] -tracking-[.06em]'>Отчитываемся на всех этапах работы.</div>
+          <div className='flex font-sfpro font-medium text-[48px] leading-[3rem] mt-[45px] ml-[55px] -tracking-[.06em]'>Отчитываемся на всех этапах работы</div>
             <div className='flex relative w-[482px] h-[184px] mt-[57px] ml-[54px] rounded-[11px] shadow-[0px_3.104px_183.424px_0px_rgba(7,22,61,0.12)]'>
               <div className='w-[393px] h-[201px] mt-[8.45px] ml-[12.67px] font-sfpro font-normal text-[19.91px] leading-[1.672rem]'>
                 <div>Добрый день, Александр!</div>

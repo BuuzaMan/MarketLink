@@ -3,6 +3,8 @@ import BigYellowCircle from '../../../svg/BigYellowCircle';
 import PinkCircle from '../../../svg/pinkCircle';
 import BlueCircle from '../../../svg/blueCircle';
 import Pricing from './details/pricing';
+import Mlbox from '../../../svg/mlbox';
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 let Tariffs = () => {
   return (
@@ -16,32 +18,28 @@ let Tariffs = () => {
                 <div className='flex space-x-[19px]'>
                     <div className='flex flex-col relative overflow-hidden w-[284px] h-[340px] rounded-2xl bg-[#FFFFFF]'>
                         <div className='font-sfpro font-medium text-[40px] leading-[2.5rem] -tracking-[.05em] mt-[23px] ml-[26px]'>Поставка на маркетплейс</div>
-                        <div>
-                            <div className='absolute w-[225px] top-[170px] right-[184px]'><img src='images/backtruck.png' alt='deliverytruck' /></div>
-                            <div className='flex flex-col ml-[106px] mt-[120.84px] w-[150px]'>
+                        <div className='flex'>
+                            <div className='flex flex-col w-[125px] mt-[115px] ml-[26px] z-10'>
                                 <div className='flex'>
                                     <div className='font-sfpro font-normal text-[19.703px] leading-[1.601rem] tracking-[.049em] mt-[23px]'>От&nbsp;</div>
-                                    <div className='font-sfpro font-medium text-[49.09px] leading-[3.068rem] -tracking-[.061em]'>200₽</div>
+                                    <div className='font-sfpro font-bold text-[49.09px] leading-[3.068rem] -tracking-[.061em]'>200₽</div>
                                 </div>
                                 <div className='font-sfpro font-normal text-[19.703px] text-[#828282] leading-[1.601rem] tracking-[.049em]'>за короб</div>
                             </div>
+                            <img src='images/backtruck.png' alt='deliverytruck' className='w-[225px] mt-[67px] z-0'/>
                         </div>
                     </div>
                     <div className='flex flex-col relative w-[284px] h-[340px] rounded-2xl bg-[#FFFFFF]'>
                         <div className='font-sfpro font-medium text-[40px] leading-[2.5rem] -tracking-[.05em] mt-[23px] ml-[26px] w-[165px]'>Упаковка под ключ</div>
                         <div className='flex'>
-                            <div className='flex mt-[73px]'><img src='images/mlbox.png' alt='dlvrbox' /></div>
-                            <div className='flex absolute -rotate-90 -left-[27px] bottom-[102px] text-white'>
-                                <div className='font-gothic font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em] font-white'>MARKET</div>
-                                <div className='font-macan font-normal text-[11.924px] leading-[0.648rem] tracking-[.112em] font-white'>LlNK</div>
-                            </div>
-                            <div className='flex flex-col w-[150px] mt-[116px] ml-[48.8px]'>
-                                <div className='flex'>
-                                    <div className='font-sfpro font-normal text-[19.703px] leading-[1.601rem] tracking-[.049em] mt-[23px]'>От&nbsp;</div>
-                                    <div className='font-sfpro font-medium text-[49.09px] leading-[3.068rem] -tracking-[.061em]'>19₽</div>
+                            <div className='flex flex-col w-[150px] ml-[30px]'>
+                                <div className='flex mt-[125.99px]'>
+                                    <div className='font-sfpro font-normal text-[19.703px] leading-[1.601rem] tracking-[.049em] mt-[15px]'>От&nbsp;</div>
+                                    <div className='font-sfpro font-bold text-[40px] leading-[2.5rem] -tracking-[.05em]'>19₽</div>
                                 </div>
                                 <div className='font-sfpro font-normal text-[19.703px] text-[#828282] leading-[1.601rem] tracking-[.049em]'>за единицу</div>
                             </div>
+                            <div className='flex mt-[71px]'><Mlbox /></div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +53,16 @@ let Tariffs = () => {
                 </div>
             </div>
             <div className='flex flex-col w-[592px] h-[632px] rounded-2xl bg-[#FFFFFF]'>
-                <div className='w-[512px] rounded-xl mt-[35px] ml-[40px]'><img src='images/map.png' alt='map' className='rounded-xl'/></div>
+            <div className='w-[512px] h-[412px] rounded-[16px] mt-[35px] ml-[40px]'>
+                <YMaps>
+                    <Map
+                        defaultState={{center: [55.704585, 37.834507],zoom: 10,}}
+                        className='w-full h-full'
+                        style={{borderRadius: '16px' }}>
+                        <Placemark geometry={[55.704585, 37.834507]} />
+                    </Map>
+                </YMaps>
+            </div>
                 <div className='mt-[32px] ml-[40px] space-y-[8px]'>
                     <div className='font-sfpro font-bold text-[24px] leading-[1.95rem] w-[498px]'>Минимальные тарифы на забор и поставку.</div>
                     <div className='font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] w-[507px]'>Находимся на 8 км МКАД в непосредственной близости от ТК Садовод, СЦ Южные Ворота, складов Коледино и Электросталь.</div>

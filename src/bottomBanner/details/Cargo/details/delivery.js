@@ -12,7 +12,7 @@ const Delivery = () => {
                     <div className='mt-[24.34px] ml-[22.56px]'><Check /></div>
                     <div className='flex flex-wrap ml-[17px] mt-[15px] h-[42px] w-[350px] font-sfpro'>
                         <div className='font-bold text-[16px] leading-[1.3rem] tracking-[.04em]'>Доставка&nbsp;</div>
-                        <div className='font-normal text-[16px] leading-[1.3rem] tracking-[.04em]'>от 12 дней, от 5 кг, от 1.8$.</div>
+                        <div className='font-normal text-[16px] leading-[1.3rem] tracking-[.04em]'>от 10 дней, от 5 кг, от 1.8$.</div>
                         <div className='font-normal text-[16px] leading-[1.3rem] tracking-[.04em]'>Жд перевозки и автодоставка.</div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Delivery = () => {
                 </div>
             </div>
         </div>
-        <div className='absolute w-[1802px] h-[815px] -top-[300px] -left-[600px] z-0 saturate-[.65] brightness-[1.30]'><img src='images/sky.png' alt='sky' /></div>
+        <div className='absolute w-[1802px] h-[815px] -top-[300px] -left-[600px] z-0 brightness-[1.30] saturate-100'><img src='images/sky.png' alt='sky' /></div>
         <div className='absolute w-[1257px] h-[676px] z-0 top-[275px]'><img src='images/containers.png' alt='cargo' /></div>
     </div>
   )
