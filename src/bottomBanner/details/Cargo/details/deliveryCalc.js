@@ -17,7 +17,7 @@ const DeliveryCalc = () => {
                 <div className='font-normal text-[18.427px] leading-[1.497rem] tracking-[.046em] h-[43.57px] justify-center'>Общий объём, м³</div>
                 <div className='z-40'><Volume /></div>
               </div>
-              <div className='w-[248.878px]'>
+              <div className='w-[248.878px] ml-[12.23px]'>
                 <div className='font-normal text-[18.427px] leading-[1.497rem] tracking-[.046em] h-[43.57px] justify-center'>Общий вес, кг</div>
                 <div className='z-40'><Volume /></div>
               </div>
@@ -28,7 +28,7 @@ const DeliveryCalc = () => {
                 <input
                 type='text'
                 placeholder='0.01'
-                className='w-[249px] h-[64px] z-40 rounded-[12.173px] font-white outline-none placeholder:pl-[20.26px] placeholder:pt-[23px] placehodler:text-[#898989] mt-[18px]'
+                className='w-[249px] h-[64px] z-40 rounded-[12.173px] font-white outline-none pl-[30px] placehodler:text-[#898989] mt-[18px]'
                 ></input>
               </div>
               <div className='z-40'>

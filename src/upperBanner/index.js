@@ -10,7 +10,11 @@ import Ozon from './ozon';
 import Cards from './details/Cards';
 import Warranty from './details/Warranty';
 
+
+
 const UpperBanner = () => {
+  
+
   return (
     <div className='container flex flex-col items-center justify-center relative overflow-hidden'>
         <div className='font-sfpro text-[68px] font-medium leading-[4.25rem] mt-[40px] w-[1144px] h-[136px] text-center'>
@@ -44,3 +48,4 @@ const UpperBanner = () => {
 };
 
 export default UpperBanner;
+
