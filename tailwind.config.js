@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"], 
   theme: {
+    screens: {
+      'desktop': '1440px',
+      'tablet': '1024px',
+      'mobile': '386px'
+    },
     extend: {
       fontFamily: {
         gothic: ["Gothic", "sans-serif"],
