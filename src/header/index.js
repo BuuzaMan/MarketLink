@@ -6,7 +6,7 @@ import HeaderButton from './details/headerButton';
 
 const Header = () => {
   return (
-    <header className='flex justify-center'>
+    <header className='flex justify-center items-center px-auto'>
         <div className='flex desktop:w-[1274px] desktop:h-[88px] mobile:w-[345px] h-[91px] relative rounded-[734px] shadow-[0px_2.312px_136.64px_0px_rgba(7,22,61,0.12)] relative desktop:mt-[20px] mobile:mt-[15px] bg-white'>
             <div className='flex desktop:w-[232px] desktop:h-[24px] mobile:w-[204px] h-[21px] desktop:mt-[32px] desktop:ml-[42px] mobile:mt-[36.24px] mobile:ml-[31.47px]'>
                 <div className='font-gothic desktop:text-[27.81px] mobile:text-[24.449px] font-normal desktop:leading-[1.512rem] mobile:leading-[1.329rem] desktop:tracking-[.261em] mobile:tracking-[.229em] uppercase'>MARKET</div>

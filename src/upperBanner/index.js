@@ -1,7 +1,7 @@
 import React from 'react'
-import Cards from './details/Cards';
+import Cards from './details/Cards/Cards';
 import Warranty from './details/Warranty';
-import CharacterBanner from './details/CharacterBanner';
+import CharacterBanner from './details/CharacterBanner/CharacterBanner';
 
 const UpperBanner = () => {
   return (

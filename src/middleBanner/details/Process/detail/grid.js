@@ -44,7 +44,7 @@ let Grid = () => {
               <div className='absolute -top-[150px] left-[350px] z-0 blur-[150px]'><BigYellowCircle /></div>
             </div>
         </div>
-        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl bg-[#FEFEFE]'>
+        <div className='flex flex-col relative overflow-hidden w-[589px] h-[532px] rounded-2xl bg-white'>
           <div className='flex flex-col mt-[45px] ml-[46px]'>
             <div className='font-sfpro font-medium text-[48px] leading-[3rem] w-[349px] h-[96px] -tracking-[.06em]'>Чёткое техзадание</div>
             <div className='font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em] mt-[16px] w-[256px] h-[42px]'>Работаем по собственной форме ТЗ, чтобы ничего не упустить</div>

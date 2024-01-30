@@ -1,7 +1,7 @@
 const Hands = () => {
     return (
-        <div className="absolute">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <div className="absolute desktop:w-[32px] desktop:h-[32px] mobile:w-[18.7px] mobile:h-[18.7px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 32 32" fill="none">
                 <g clip-path="url(#clip0_133_93)">
                     <path d="M16.4716 0.126998C16.1801 -0.0422921 15.8202 -0.0422921 15.5288 0.126998L9.41479 3.67897L16.0002 7.4285L22.5857 3.67897L16.4716 0.126998Z" fill="white"/>
                     <path d="M8.49268 12.262C8.49268 12.5987 8.6731 12.9097 8.96551 13.0767L15.0616 16.5602V9.05384L8.49268 5.31369V12.262Z" fill="white"/>

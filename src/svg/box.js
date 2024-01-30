@@ -1,7 +1,7 @@
 const Box = () => {
     return (
-        <div className="absolute">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <div className="absolute desktop:w-[32px] desktop:h-[32px] mobile:w-[18.7px] mobile:h-[18.7px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 32 32" fill="none">
                 <g clip-path="url(#clip0_133_146)">
                     <path d="M6.95407 4.43387L1.18113 7.49781C1.08226 7.54962 0.988885 7.60862 0.900635 7.67318L15.6626 15.3709L21.8441 12.3134L6.95407 4.43387Z" fill="white"/>
                     <path d="M31.9971 9.38263L24.6119 13.0354V17.1506C24.6119 17.6681 24.1923 18.0878 23.6747 18.0878C23.1571 18.0878 22.7375 17.6681 22.7375 17.1506V13.9625L16.5884 17.0039V31.8974C16.6076 31.8884 16.6271 31.8802 16.6462 31.8707L30.7826 24.7079C31.5336 24.3324 31.9999 23.5779 31.9999 22.7379V9.46544C31.9999 9.43763 31.9981 9.41019 31.9971 9.38263Z" fill="white"/>
