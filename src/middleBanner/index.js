@@ -7,7 +7,7 @@ import Logistics from './details/logistics';
 
 const MiddleBanner = () => {
   return (
-    <div className='flex flex-col container w-[1208px] items-center mx-auto'>
+    <div className='flex flex-col container desktop:w-[1208px] mobile:w-[386px] items-center mx-auto'>
         <Calculator />
         <FullFilment />
         <Process />

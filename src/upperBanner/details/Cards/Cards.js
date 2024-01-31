@@ -12,7 +12,7 @@ let Cards = () => {
         <Service />
         <Manager />
       </div>
-      <div className='desktop:flex desktop:flex-row mobile:flex mobile:flex-col gap-x-6'> 
+      <div className='desktop:flex desktop:flex-row mobile:flex mobile:flex-col desktop:gap-x-6 mobile:gap-y-[20px]'> 
         <Everyday />
         <FBO />
         <Supply />

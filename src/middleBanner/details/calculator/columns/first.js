@@ -2,7 +2,7 @@ import React from 'react'
 
 const First = () => {
   return (
-    <div className='flex flex-col mt-[30px] ml-[37px]'>
+    <div className='flex flex-col w-[336px] desktop:mt-[30px] desktop:ml-[37px]'>
         <div>
             <div className='flex font-lato font-bold text-[13px] leading-[1.118rem]'>Количество единиц товара</div>
             <div className='flex mt-[8px]'>
@@ -16,8 +16,8 @@ const First = () => {
         <div className='mt-[24px]'>
             <div className='flex font-lato font-bold text-[13px] leading-[1.118rem]'>Потребуется ли забор товара(Карго/Рынок)?</div>
             <div className='flex w-[336px] h-[43px] mt-[8px] space-x-[8px]'>
-                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Да</button>
-                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Нет</button>
+                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Да</button>
+                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Нет</button>
             </div>
         </div>
         <div>
@@ -25,16 +25,16 @@ const First = () => {
                 <div className='font-lato text-[13.005px] font-bold leading-[1.118rem]'>Объем груза&nbsp;</div>
                 <div className='font-lato font-normal italic text-[13.005px] leading-[1.118rem]'>(Можно узнать из накладной)</div>
             </div>
-            <div className='flex mt-[8px] space-x-[8px]'>
+            <div className='flex mt-[8px] gap-x-[8px]'>
                 <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>До 1м³</button>
-                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Более 1м³</button>
+                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Более 1м³</button>
             </div>
         </div>
         <div className='flex flex-col mt-[24px] items-start'>
             <div className='font-lato text-[13.005px] text-[#5C6770]'>Товар уже промаркирован?</div>
             <div className='flex mt-[8px] space-x-[8px]'>
                 <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Да</button>
-                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Нет</button>
+                <button className='flex w-[164px] h-[43px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] leading-[1.321rem] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white'>Нет</button>
             </div>
         </div>
     </div>

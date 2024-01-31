@@ -2,7 +2,7 @@ import React from 'react'
 
 const Third = () => {
   return (
-    <div className='flex flex-col mt-[30px] ml-[32px]'>
+    <div className='flex flex-col desktop:mt-[30px] desktop:ml-[32px] mobile:mt-[28px]'>
         <div className='flex flex-col items-start'>
             <div className='font-lato font-bold text-[13.005px] leading-[1.118rem]'>Вложение</div>
             <div className='flex w-[336px] h-[43px] mt-[8px] space-x-[8px]'>

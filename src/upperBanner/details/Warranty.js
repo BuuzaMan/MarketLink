@@ -7,7 +7,7 @@ import CalcBtn from '../../calcCostBtn';
 
 let  Warranty = () => {
   return (
-    <div className='flex flex-col container desktop:w-[1208px] desktop:h-[676px] desktop:rounded-2xl desktop:mt-[45px] mobile:w-[345px] mobile:h-[1600px] mobile:rounded-2xl mobile:mt-[200px] bg-red-200 items-center relative overflow-hidden'>
+    <div className='flex flex-col container desktop:w-[1208px] desktop:h-[676px] desktop:rounded-2xl desktop:mt-[45px] mobile:w-[345px] mobile:h-[1600px] mobile:rounded-2xl mobile:mt-[80px] bg-red-200 items-center relative overflow-hidden'>
         <div className='flex font-sfpro font-medium desktop:text-[64px] mobile:text-[40px] text-white desktop:leading-[4rem] mobile:leading-[3rem] desktop:w-[862px] desktop:h-[128px] mobile:w-[324px] mobile:h-[200px] desktop:mt-[48px] mobile:mt-[25px] text-center z-40'>Гарантируем ответственность на каждом этапе работы</div>
         <div className='flex flex-col items-center font-sfpro font-normal text-white text-center tracking-[.04em] leading-[1.3rem] desktop:w-[504px] desktop:h-[63px] mobile:w-[290px] mobile:h-[120px] desktop:mt-[24px] mobile:mt-[20px] z-40'>
             <p>Ваши убытки - это наши финансовые потери.</p>
