@@ -5,9 +5,9 @@ import Work from './details/Work';
 
 let Logistics = () => {
   return (
-    <div className='flex flex-col w-[1208px] items-center mt-[120px]'>
-        <div className='font-sfpro font-bold text-[24px] leading-[1.95rem] -tracking-[.03em]' style={{ backgroundImage: 'linear-gradient(92deg, #EB1988 4.78%, #005AF9 100%)', backgroundClip: 'text', color: 'transparent' }}>25 видов услуг в одном окне</div>
-        <div className='font-sfpro font-medium text-[64px] leading-[4rem] -tracking-[.08] w-[736px] h-[128px] text-center mt-[12px]'>Ваш собственный отдел логистики в Москве</div>
+    <div className='flex flex-col w-[1208px] items-center desktop:mt-[120px] mobile:mt-[80px]'>
+        <div className='font-sfpro font-bold text-[24px] leading-[1.6rem] -tracking-[.03em]' style={{ backgroundImage: 'linear-gradient(92deg, #EB1988 4.78%, #005AF9 100%)', backgroundClip: 'text', color: 'transparent' }}>25 видов услуг в одном окне</div>
+        <div className='font-sfpro font-medium desktop:text-[64px] mobile:text-[40px] desktop:leading-[4rem] mobile:leading-[2.5rem] desktop:-tracking-[.08] desktop:w-[736px] mobile:w-[316px] desktop:h-[128px] mobile:h-[120px] text-center mt-[12px]'>Ваш собственный отдел логистики в Москве</div>
         <Service />
         <Checking />
         <Work />
