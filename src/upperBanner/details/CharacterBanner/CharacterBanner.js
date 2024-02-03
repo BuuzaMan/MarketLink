@@ -31,7 +31,7 @@ const CharacterBanner = () => {
         </div>
         <Blur />
         <Corner />
-        <div className='desktop:block tablet:block mobile:flex desktop:w-[1440px] desktop:h-[600px] mobile:w-[400px] mobile:h-[50px] mobile:overflow-x-scroll mobile:no-scrollbar mobile:gap-x-[15px] mobile:mt-[32px] mobile:snap-smoth desktop:order-1 tablet:order-1 mobile:order-2'>
+        <div className='desktop:block tablet:block mobile:flex desktop:w-[1440px] desktop:h-[600px] mobile:w-[400px] mobile:h-[50px] mobile:overflow-x-scroll mobile:scrollbar-hide mobile:gap-x-[15px] mobile:mt-[32px] desktop:order-1 tablet:order-1 mobile:order-2 desktop:bg-transparent mobile:bg-white'>
           <div className='desktop:absolute desktop:top-[374px] desktop:left-[310px]'><Marketlink /></div>
           <div className='desktop:absolute desktop:left-[1027px] desktop:top-[370px]'><Wildberries /></div>
           <div className='desktop:absolute desktop:left-[295px] desktop:top-[732.89px]'><Yandex /></div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Checkbox = () => {
   return (
-    <div className='mt-[14px] ml-[22px]'>
+    <div className=''>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
             <g clip-path="url(#clip0_137_1178)">
             <path d="M25.219 0.904922C24.8983 0.350359 24.3012 0.00585938 23.661 0.00585938H16.9697V7.92067H29.2768L25.219 0.904922Z" fill="url(#paint0_linear_137_1178)"/>
