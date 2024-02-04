@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ButtonDecrease from '../../../../svg/buttonDecrease';
-import ButtonIncrease from '../../../../svg/buttonIncrease';
+import ButtonDecrease from '../../../../../../svg/buttonDecrease';
+import ButtonIncrease from '../../../../../../svg/buttonIncrease';
 
 const Volume = () => {
     const [count, setCount] = useState(0.01);

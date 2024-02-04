@@ -11,13 +11,13 @@ const Application = () => {
             <div className='font-bold desktop:text-[24px] mobile:text-[16px] text-white desktop:leading-[1.3rem] mobile:leadimg-[1.3rem] desktop:-tracking-[.03em] mobile:-tracking-[.02em]'>Опишите вашу заявку</div>
             <input 
                 type='text'
-                className='desktop:w-[508.194px] mobile:w-[297px] desktop:h-[160px] mobile:h-[93.5px] desktop:rounded-[12.84px] mobile:rounded-[8px] bg-[#F5F5F7] desktop:mt-[8px] mobile:mt-[4.68px] desktop:pb-[116px] mobile:pb-[64.07px] desktop:pl-[27.11px] mobile:pl-[15.85px] placeholder:font-sfpro placeholder:font-normal desktop:placeholder:text-[16px] desktop:placeholder:text-[12px] placeholder:text-[#828282] placeholder:leading-[1.3rem] placeholder:tracking-[.04em] outline-none'
+                className='desktop:w-[508.194px] mobile:w-[297px] desktop:h-[160px] mobile:h-[93.5px] desktop:rounded-[12.84px] mobile:rounded-[8px] bg-[#F5F5F7] desktop:mt-[8px] mobile:mt-[4.68px] desktop:pb-[116px] mobile:pb-[64.07px] desktop:pl-[27.11px] mobile:pl-[15.85px] placeholder:font-sfpro placeholder:font-normal desktop:placeholder:text-[16px] mobile:placeholder:text-[12px] placeholder:text-[#828282] placeholder:leading-[1.3rem] placeholder:tracking-[.04em] outline-none'
                 placeholder='Нашей компании нужно...' >
             </input>
             <div className='font-bold desktop:text-[24px] mobile:text-[16px] text-white desktop:leading-[1.3rem] mobile:leading-[1.3rem] desktop:-tracking-[.03em] mobile:-tracking-[.02em] desktop:mt-[8px] mobile:mt-[4.68px]'>Укажите ваш номер телефона</div>
             <input 
                 type='text'
-                className='dsktop:w-[508.194px] mobile:w-[297px] desktop:h-[64px] mobile:h-[37.4px] desktop:rounded-[12.84px] mobile:rounded-[8px] bg-[#F5F5F7] desktop:mt-[8px] mobile:mt-[4.68px] desktop:pl-[27.11px] mobile:pl-[14.85px] placeholder:font-sfpro placeholder:font-normal placeholder:text-[16px] placeholder:text-[#828282] placeholder:leading-[1.3rem] placeholder:tracking-[.04em] outline-none'
+                className='desktop:w-[508.194px] mobile:w-[297px] desktop:h-[64px] mobile:h-[37.4px] desktop:rounded-[12.84px] mobile:rounded-[8px] bg-[#F5F5F7] desktop:mt-[8px] mobile:mt-[4.68px] desktop:pl-[27.11px] mobile:pl-[14.85px] placeholder:font-sfpro placeholder:font-normal placeholder:text-[16px] placeholder:text-[#828282] placeholder:leading-[1.3rem] placeholder:tracking-[.04em] outline-none'
                 placeholder='+1 234 567 89 00'>
             </input>
             <button className='desktop:w-[508px] mobile:w-[297px] desktop:h-[64px] mobile:h-[56px] bg-white desktop:mt-[28px] mobile:mt-[14.9px] relative overflow-hidden desktop:rounded-[555px] mobile:rounded-[324.3px] font-extrabold desktop:text-[16px] mobile:text-[16px] leading-[1.3rem]'>

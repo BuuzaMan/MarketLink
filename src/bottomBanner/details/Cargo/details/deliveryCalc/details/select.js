@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import VectorUp from '../../../../svg/vectorUp';
+import VectorUp from '../../../../../../svg/vectorUp'
 
 const Select = () => {
   const categories = ['Одежда', 'Хозяйственные товары', 'Poizon', 'Электроника', 'Прочее'];
@@ -16,7 +16,7 @@ const Select = () => {
   };
 
   return (
-    <div className="inline-block text-center mt-[16px] relative">
+    <div className="inline-block text-center relative">
       <div>
         <button
           type="button"
