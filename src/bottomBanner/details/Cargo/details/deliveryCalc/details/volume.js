@@ -18,7 +18,7 @@ const Volume = () => {
     return (
         <div className='flex'>
             <button className='z-40' onClick={decreaseCount}><ButtonDecrease /></button>
-            <div className='z-40 flex items-center justify-center w-[106px] h-[64px] ml-[7px] mr-[7px] rounded-[12.173px] bg-white font-normal text-[16px] text-[#898989] leading-[1.3rem] tracking-[.04em]'>{count.toFixed(2)}</div>
+            <div className='z-40 flex items-center justify-center desktop:w-[106px] desktop:h-[64px] mobile:w-[62.4px] mobile:h-[37.4px] desktop:ml-[7px] mobile:ml-[4.09px] desktop:mr-[7px] mobile:mr-[4.09px] desktop:rounded-[12.173px] mobile:rounded-[7.115px] bg-white font-normal desktop:text-[16px] mobile:text-[10px] text-[#898989] leading-[1.3rem] tracking-[.04em]'>{count.toFixed(2)}</div>
             <button className='z-40' onClick={increaseCount}><ButtonIncrease /></button>
         </div>
     )

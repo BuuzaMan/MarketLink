@@ -20,19 +20,19 @@ const Select = () => {
       <div>
         <button
           type="button"
-          className="inline-flex font-bold w-[245px] h-[64px] rounded-xl bg-white focus:outline-none transition duration-300 relative"
+          className="inline-flex font-bold desktop:w-[245px] mobile:w-[144px] desktop:h-[64px] mobile:h-[37.4px] desktop:rounded-xl mobile:rounded-[7.115px] bg-white focus:outline-none transition duration-300 relative"
           onClick={toggleMenu}
         >
-          <div className='mt-[22px] ml-[23px]'>{selectedCategory}</div>
+          <div className='desktop:mt-[22px] mobile:mt-[12.86px] desktop:ml-[23px] mobile:ml-[12.57px] desktop:text-[16px] mobile:text-[10px]'>{selectedCategory}</div>
           {selectedCategory && !isMenuOpen && (
-            <div className="absolute left-[200px] top-[26px]">
+            <div className="absolute desktop:left-[200px] mobile:left-[120px] desktop:top-[26px] mobile:top-[14px]">
               <div className='rotate-180'><VectorUp /></div>
             </div>
           )}
         </button>
       </div>
       {isMenuOpen && (
-        <div className="absolute w-[245px] rounded-xl -top-[0px] shadow-lg bg-white z-40">
+        <div className="absolute desktop:w-[245px] mobile:w-[144px] rounded-xl top-0 shadow-lg bg-white z-40">
           <div className="">
             {categories.map((category) => (
               <button

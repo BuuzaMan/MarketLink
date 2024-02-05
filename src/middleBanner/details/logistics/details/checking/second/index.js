@@ -17,9 +17,9 @@ const Second = () => {
             <div className='flex absolute ml-[25px] mt-[214px] w-[215px] h-[121px] backdrop-blur-sm desktop:flex tablet:flex mobile:hidden'><RemarkaMiddle /></div>
             <div className='absolute desktop:hidden tablet:hidden mobile:flex mobile:top-[23px] mobile:left-[21px] backdrop-blur-[51px] mobile:w-[235px] mobile:h-[121px] rounded-[16px]'/>
             <div className='absolute desktop:hidden tablet:hidden mobile:flex mobile:top-[154px] mobile:left-[21px] backdrop-blur-[51px] mobile:w-[235px] mobile:h-[121px] rounded-[16px]' />
-            <div className='absolute desktop:top-[101px] mobile:top-[52px] desktop:left-[49px] mobile:left-[45px]'><Check /></div>
+            <div className='absolute desktop:top-[101px] mobile:top-[52px] desktop:left-[49px] mobile:left-[45px] desktop:w-[24px] mobile:w-[24px]'><Check /></div>
             <div className='absolute w-[165px] h-[63px] desktop:top-[101px] mobile:top-[52px] desktop:left-[84px] mobile:left-[80px] font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em]'>Чистый сухой склад для хранения вашего товара.</div>
-            <div className='flex absolute desktop:left-[52px] mobile:left-[45px] desktop:top-[243px] mobile:top-[183px]'><Check /></div>
+            <div className='flex absolute desktop:left-[52px] mobile:left-[45px] desktop:top-[243px] mobile:top-[183px] desktop:w-[24px] mobile:w-[24px]'><Check /></div>
             <div className='absolute w-[116px] h-[63px desktop:left-[87px] mobile:left-[84px] desktop:top-[243px] mobile:top-[183px] font-sfpro font-normal text-[16px] text-[#4F4F4F] leading-[1.3rem] tracking-[.04em]'>Дешевле, чем на складе маркетплейса.</div>
         </div>
     </div> 
