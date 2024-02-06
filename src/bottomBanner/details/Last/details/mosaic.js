@@ -5,7 +5,7 @@ import MosaicPinkGlow from '../../../../svg/mosaicPinkGlow';
 
 const Mosaic = () => {
   return (
-    <div className='w-[592px] h-[560px] rounded-2xl relative overflow-hidden'>
+    <div className='desktop:w-[592px] desktop:h-[560px] mobile:w-[346px] mobile:h-[328px] rounded-2xl relative overflow-hidden desktop:order-1 tablet:order-1 mobile:order-2 '>
         <img src='images/face1.png' alt='face' className='w-[142px] h-[142px] rounded-full absolute bottom-[503px] right-[490px] z-40'/>
         <img src='images/face2.png' alt='face' className='w-[142px] h-[142px] rounded-full absolute top-[177px] right-[530px] z-40' />
         <img src='images/face3.png' alt='face' className='w-[114px] h-[114px] rounded-full absolute top-[395px] right-[530px] z-40' />
