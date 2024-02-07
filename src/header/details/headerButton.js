@@ -17,7 +17,7 @@ const HeaderButton = () => {
     };
 
     return (
-        <div className="mt-[13px]">
+        <div className="mt-[13px] z-40">
             <button onClick={toggleButton}>
                 <RoundedButton />
             </button>
