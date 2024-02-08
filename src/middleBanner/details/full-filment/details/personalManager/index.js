@@ -1,7 +1,7 @@
 import React from 'react'
-import WHSP from '../../../../svg/whsp';
-import TG from '../../../../svg/TG';
-import YellowCircle from '../../../../svg/YellowCircle';
+import WHSP from '../../../../../svg/whsp';
+import TG from '../../../../../svg/TG';
+import YellowCircle from '../../../../../svg/YellowCircle';
 
 const PersonalManager = () => {
   return (

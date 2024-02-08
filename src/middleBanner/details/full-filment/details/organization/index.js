@@ -1,7 +1,7 @@
 import React from 'react'
-import PinkCircle from '../../../../svg/pinkCircle';
-import BlueCircle from '../../../../svg/blueCircle';
-import YellowCircle from '../../../../svg/YellowCircle';
+import PinkCircle from '../../../../../svg/pinkCircle';
+import BlueCircle from '../../../../../svg/blueCircle';
+import YellowCircle from '../../../../../svg/YellowCircle';
 
 const Organization = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import First from './columns/first';
-import Second from './columns/second';
-import Third from './columns/third';
+import First from './details/first';
+import Second from './details/second';
+import Third from './details/third';
 import Button from '../button';
 import BigBlueEl from '../../../svg/bigBlueEl';
 import PinkBig from '../../../svg/pinkBig';
@@ -26,8 +26,8 @@ let Calculator = () => {
             <div className='desktop:w-[157px] desktop:h-[40px] mobile:w-[252px] mobile:h-[26px] desktop:mt-[24px] desktop:ml-[27px] mobile:ml-[77px] font-sfpro text-[17.438px] font-medium leading-[1.625rem] text-left z-40'>Примерная стоимость без НДС</div>
             <div className='desktop:mt-[20px] desktop:ml-[395px] mobile:mt-[28px] mobile:ml-[70px] z-40'><Button /></div>
           </div>
-          <div className='flex absolute z-0 top-[207px] left-[173px] blur-[800px] desktop:flex mobile:hidden'><BigBlueEl /></div>
-          <div className='flex absolute z-20 top-[200px] left-[200px] blur-[300px] desktop:flex mobile:hidden'><PinkBig /></div>
+          <div className='flex absolute z-0 top-[207px] left-[173px] blur-[600px] desktop:flex mobile:hidden'><BigBlueEl /></div>
+          <div className='flex absolute z-0 top-[200px] left-[200px] blur-[200px] desktop:flex mobile:hidden'><PinkBig /></div>
         </div>
     </div>
   )
