@@ -10,7 +10,7 @@ import PinkBig from '../../../svg/pinkBig';
 
 let Calculator = () => {
   return (
-    <div className='flex container flex-col w-[1198px] mt-[120px] mx-auto items-center '>
+    <div className='flex container flex-col w-[1198px] mt-[120px] mx-auto items-center'>
         <div className='flex font-sfpro font-medium text-[64px] leading-[4rem]'>Рассчитать стоимость поставки</div>
         <div className='flex flex-col relative overflow-hidden items-start w-[1198px] h-[650px] rounded-2xl mt-[40px]'>
           <div className='flex flex-row rounded-xl bg-[#FEFEFE] w-[1145px] h-[500px] mt-[25px] ml-[27px] z-40 #FEFEFE'>

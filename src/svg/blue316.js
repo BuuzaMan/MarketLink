@@ -8,8 +8,8 @@ const Blue316 = () => {
             <circle cx="413.803" cy="304.546" r="158.092" transform="rotate(43.9734 413.803 304.546)" fill="#005CFF"/>
             </g>
             <defs>
-            <filter id="filter0_f_76_124" x="-218.744" y="-328.001" width="1265.09" height="1265.09" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_76_124" x="-218.744" y="-328.001" width="1265.09" height="1265.09" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="237.227" result="effect1_foregroundBlur_76_124"/>
             </filter>

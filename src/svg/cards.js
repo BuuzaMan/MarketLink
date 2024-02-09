@@ -11,12 +11,12 @@ const Cards = () => {
             </g>
             <defs>
             <linearGradient id="paint0_linear_63_945" x1="5.68338" y1="11.4995" x2="28.8114" y2="12.8454" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint1_linear_63_945" x1="5.68338" y1="-5.11133" x2="28.8491" y2="-4.14166" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <clipPath id="clip0_63_945">
             <rect width="32" height="32" fill="white" transform="translate(0 0.00585938)"/>

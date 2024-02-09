@@ -8,12 +8,12 @@ let Downgrade = () => {
             <path d="M17.725 11.7552L18.084 13.1148L21.4831 12.2171L20.5853 8.8181L19.2257 9.17721L19.5083 10.2472L3.87007 1.08441L3.15918 2.29766L18.811 11.4684L17.725 11.7552Z" fill="url(#paint1_linear_133_58)"/>
             <defs>
             <linearGradient id="paint0_linear_133_58" x1="1.41573" y1="5.89444" x2="25.1018" y2="7.5982" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint1_linear_133_58" x1="4.24008" y1="-1.54725" x2="22.3443" y2="-0.393006" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             </defs>
         </svg>

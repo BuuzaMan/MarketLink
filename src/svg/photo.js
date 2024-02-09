@@ -10,20 +10,20 @@ let Photo = () => {
             <path d="M11.9963 11.953C9.89316 11.953 8.18213 13.664 8.18213 15.7671C8.37389 20.8201 15.6194 20.8188 15.8103 15.7671C15.8103 13.664 14.0993 11.953 11.9963 11.953Z" fill="url(#paint3_linear_133_83)"/>
             <defs>
             <linearGradient id="paint0_linear_133_83" x1="1.76633" y1="4.15752" x2="6.09603" y2="4.63568" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint1_linear_133_83" x1="8.2488" y1="4.17265" x2="16.2839" y2="5.95298" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint2_linear_133_83" x1="1.41529" y1="3.93384" x2="25.1282" y2="5.38031" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint3_linear_133_83" x1="8.63211" y1="10.2898" x2="16.1862" y2="10.607" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             </defs>
         </svg>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Warehouse = () => {
-  const [selectedMarketplace, setSelectedMarketplace] = useState('');
+  const [selectedMarketplace, setSelectedMarketplace] = useState('ВБ');
   const [showWarehouseBlock, setShowWarehouseBlock] = useState(false);
   const [selectedWarehouse, setSelectedWarehouse] = useState('');
 
@@ -16,7 +16,7 @@ const Warehouse = () => {
   };
   return (
     <div>
-        <div className='flex flex-col mt-[24px]'>
+        <div className='flex flex-col mt-[18px]'>
         <div className='flex flex-col items-start'>
             <div className='font-lato font-bold text-[13.005px] leading-[1.118rem]'>На какой маркетплейс планируется отгрузка</div>
             <div className='flex w-[336px] h-[43px] mt-[8px] space-x-[10px]'>

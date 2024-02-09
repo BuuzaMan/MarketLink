@@ -4,7 +4,7 @@ const Starbox = () => {
   return (
     <div className='mt-[13px] ml-[19px]'>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_137_1227)">
+            <g clipPath="url(#clip0_137_1227)">
             <path d="M12.3177 8.82748L11.448 13.8958L16 11.5026L20.552 13.8958L19.6822 8.82748L23.3645 5.23767L18.276 4.49886L16 0.00585938L13.724 4.49886L8.6355 5.23767L12.3177 8.82748Z" fill="url(#paint0_linear_137_1227)"/>
             <path d="M28.8503 19.5305L24.4375 15.1309H16.9375V20.7559H15.0625V15.1309H7.56247L3.14966 19.5305L4.47528 20.8562L7.56247 17.769V32.0059H24.4375V17.769L27.5247 20.8562L28.8503 19.5305Z" fill="url(#paint1_linear_137_1227)"/>
             <path d="M5.6875 5.75586H7.5625V7.63086H5.6875V5.75586Z" fill="url(#paint2_linear_137_1227)"/>
@@ -16,36 +16,36 @@ const Starbox = () => {
             </g>
             <defs>
             <linearGradient id="paint0_linear_137_1227" x1="9.50434" y1="-3.03257" x2="24.0872" y2="-2.38529" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint1_linear_137_1227" x1="4.66571" y1="11.4394" x2="30.0582" y2="13.0582" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint2_linear_137_1227" x1="5.7981" y1="5.3457" x2="7.6549" y2="5.42342" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint3_linear_137_1227" x1="24.5481" y1="5.3457" x2="26.4049" y2="5.42342" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint4_linear_137_1227" x1="6.49192" y1="10.6251" x2="8.13759" y2="9.76458" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint5_linear_137_1227" x1="22.7278" y1="1.24964" x2="24.3734" y2="0.389089" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint6_linear_137_1227" x1="6.299" y1="2.04643" x2="7.29492" y2="0.477087" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <linearGradient id="paint7_linear_137_1227" x1="22.5326" y1="11.4156" x2="23.5286" y2="9.84623" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EB1988"/>
-            <stop offset="1" stop-color="#005AF9"/>
+            <stop stopColor="#EB1988"/>
+            <stop offset="1" stopColor="#005AF9"/>
             </linearGradient>
             <clipPath id="clip0_137_1227">
             <rect width="32" height="32" fill="white" transform="translate(0 0.00585938)"/>
