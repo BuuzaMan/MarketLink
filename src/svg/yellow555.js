@@ -9,7 +9,7 @@ const Yellow555 = () => {
         </g>
         <defs>
         <filter id="filter0_f_76_223" x="-403.875" y="-207.869" width="1817.28" height="1817.28" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feGaussianBlur stdDeviation="315.4" result="effect1_foregroundBlur_76_223"/>
         </filter>

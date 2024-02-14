@@ -70,7 +70,7 @@ let Cards = () => {
             </div>
             <div className='flex absolute -left-[170px] mt-[350px] blur-[90px]'><YellowCircle /></div>
             <div className='flex absolute left-[60px] top-[280px] blur-[100px]'><BlueCircle /></div>
-            <div classname><PinkCircle /></div>
+            <div className><PinkCircle /></div>
           </div>
           <div className='flex relative w-[386px] h-[559px] rounded-[16px] bg-white overflow-hidden'>
             <div className='flex font-sfpro text-[48px] font-medium leading-[3rem] tracking-[-.05em] ml-[31px] mt-[36px]'>FBO и FBS</div>
