@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
-const Tag = () => {
+const Tag = ({ onTagAttachedChange }) => {
   const [isTagAttached, setIsTagAttached] = useState('');
 
   const handleButtonClick = (value) => {
     setIsTagAttached(value);
+    onTagAttachedChange(value);
   };
 
 

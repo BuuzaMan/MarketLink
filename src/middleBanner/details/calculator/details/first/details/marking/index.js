@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Marking = ({ onMarkingChange }) => {
   const [isMarked, setIsMarked] = useState(false);
-  const [selectedMark, setSelectedMark] = useState('single');
+  const [selectedMark, setSelectedMark] = useState('');
 
   const handleMarkingButtonClick = (markType) => {
     setIsMarked(true);

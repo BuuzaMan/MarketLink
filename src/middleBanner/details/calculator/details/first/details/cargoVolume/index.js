@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const CargoVolume = ( {onCargoVolumeChange} ) => {
-  const [choice, setChoice] = useState('more');
+  const [choice, setChoice] = useState('');
 
   const handleButtonClick = (value) => {
     setChoice(value);

@@ -5,25 +5,30 @@ import PickUp from './details/pickup';
 import CargoVolume from './details/cargoVolume';
 import Marking from './details/marking';
 import StepOne from './details/stepOne';
-import useProductPrice from './details/hooks';
+import useCustomHook from './details/hooks/markHook';
 
-const First = () => {  
-  const productPrice = useProductPrice();
+
+const First = ({ onQuantityChange }) => {  
+  const [quantity, setQuantity] = React.useState(0);
+  const [markingType, setMarkingType] = React.useState('')
+
 
   const handleCargoVolumeChange = (volumePrice) => {
     console.log('Цена за объем:', volumePrice);
   };
-  const handleQuantityChange = (quantity) => {
-    console.log('Количество товара:', quantity);
-    
+  const handleQuantityChange = (newQuantityObject) => {
+    const newQuantity = newQuantityObject.quantity || 0;
+    setQuantity(Number(newQuantity));
+    onQuantityChange(newQuantityObject); 
   };
   const handleSizeChange = (sizeData) => {
     console.log('Объем:', sizeData);
   }
-  const handleMarkingChange = (markType) => {
-    console.log('Тип маркировки:', markType);
-    
+  const handleMarkingChange = (newMarkType) => {
+    console.log('Тип маркировки:', );
+    setMarkingType(newMarkType);
   };
+  const calculatedValue = useCustomHook(quantity, markingType);
 
   return (
     <div className='flex flex-col mt-[17px] ml-[35px] w-[336px] h-[419px]'>
@@ -36,8 +41,8 @@ const First = () => {
         <CargoVolume onCargoVolumeChange={handleCargoVolumeChange}/>
         <Marking onMarkingChange={handleMarkingChange}/>
         <div>
-        Стоимость товара: {productPrice}
-      </div>
+          Рассчитанное значение: {calculatedValue}
+        </div>
     </div>
     
     
