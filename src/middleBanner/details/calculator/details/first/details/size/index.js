@@ -20,8 +20,6 @@ const Size = ({ onSizeChange }) => {
         onSizeChange({ calculatedVolume });
     }, [length, width, height, onSizeChange]);
 
-    const calculatedVolume = calculateVolume(length, height, width);
-
     return (
         <div>
             <div className='font-lato font-bold text-[13px] leading-[1rem] w-[120px] h-[18px]'>

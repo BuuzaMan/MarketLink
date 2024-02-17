@@ -22,10 +22,10 @@ const First = ({ onQuantityChange }) => {
     onQuantityChange(newQuantityObject); 
   };
   const handleSizeChange = (sizeData) => {
-    console.log('Объем:', sizeData);
+    console.log('Объем:', sizeData.calculatedVolume);
   }
   const handleMarkingChange = (newMarkType) => {
-    console.log('Тип маркировки:', );
+    console.log('Тип маркировки:', newMarkType );
     setMarkingType(newMarkType);
   };
   const calculatedValue = useCustomHook(quantity, markingType);
@@ -41,7 +41,7 @@ const First = ({ onQuantityChange }) => {
         <CargoVolume onCargoVolumeChange={handleCargoVolumeChange}/>
         <Marking onMarkingChange={handleMarkingChange}/>
         <div>
-          Рассчитанное значение: {calculatedValue}
+          Цена за маркировку: {calculatedValue}
         </div>
     </div>
     

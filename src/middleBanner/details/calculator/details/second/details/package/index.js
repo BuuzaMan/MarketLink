@@ -1,10 +1,22 @@
 import React, { useState } from 'react'
+import ZipMenu from './details/zipMenu';
 
-const Package = () => {
+const Package = ({ onPackageSelect }) => {
   const [ selectedPackage, setSelectedPackage] = useState('');
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleButtonClick = (value) => {
     setSelectedPackage(value);
+    onPackageSelect(value);
+    if (value === 'zip') {
+      setShowMenu(true);
+    } else {
+      setShowMenu(false);
+    }
+  }
+  const handleSizeSelect = (size) => {
+    console.log(`Выбран размер: ${size}`);
+    setShowMenu(false);
   }
 
   return (
@@ -12,7 +24,7 @@ const Package = () => {
         <div className='font-lato font-bold text-[13.005px] leading-[1.118rem]'>Упаковка</div>
         <div className='grid grid-cols-3 w-[336px] mt-[6px] gap-x-[8px] gap-y-[8px]'>
           <button
-            className={`flex w-[164px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${
+            className={`flex w-[164px] h-[42px] relative rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${
               selectedPackage === 'zip' ? 'bg-black text-white' : 'bg-white text-black'
             } focus:outline-none focus:bg-black focus:text-white`}
             onClick={() => handleButtonClick('zip')}
@@ -52,8 +64,9 @@ const Package = () => {
             Другое
           </button>
         </div>
+        {showMenu && <ZipMenu onSizeSelect={handleSizeSelect} />}
     </div>
-  )
+  );
 }
 
 export default Package;

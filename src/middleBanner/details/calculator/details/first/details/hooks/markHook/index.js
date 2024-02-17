@@ -4,9 +4,6 @@ const useCustomHook = (quantity, markingType) => {
   const [calculatedValue, setCalculatedValue] = useState(0);
 
   useEffect(() => {
-    console.log('quantity:', quantity);
-    console.log('markingType:', markingType);
-
     const isValidQuantity = !isNaN(quantity) && typeof quantity === 'number';
     const isValidMarkingType = markingType === 'single' || markingType === 'double';
 
@@ -19,7 +16,6 @@ const useCustomHook = (quantity, markingType) => {
     }
   }, [quantity, markingType]);
 
-  console.log('Calculated Value:', calculatedValue);
 
   return calculatedValue;
 };
