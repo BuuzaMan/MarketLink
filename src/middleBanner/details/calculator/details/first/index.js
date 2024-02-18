@@ -6,11 +6,13 @@ import CargoVolume from './details/cargoVolume';
 import Marking from './details/marking';
 import StepOne from './details/stepOne';
 import useCustomHook from './details/hooks/markHook';
+import useVolumeCalculation from './details/hooks/volumeHook';
 
 
-const First = ({ onQuantityChange }) => {  
+const First = ({ onQuantityChange, onSizeChange }) => {  
   const [quantity, setQuantity] = React.useState(0);
   const [markingType, setMarkingType] = React.useState('')
+  const [sizeData, setSizeData] = React.useState({ length: '', width: '', height: '' });
 
 
   const handleCargoVolumeChange = (volumePrice) => {
@@ -21,9 +23,11 @@ const First = ({ onQuantityChange }) => {
     setQuantity(Number(newQuantity));
     onQuantityChange(newQuantityObject); 
   };
-  const handleSizeChange = (sizeData) => {
-    console.log('Объем:', sizeData.calculatedVolume);
-  }
+  const handleSizeChange = (newSizeData) => {
+    setSizeData(newSizeData);
+    onSizeChange(newSizeData)
+  };
+  const calculatedVolume = useVolumeCalculation(sizeData);
   const handleMarkingChange = (newMarkType) => {
     console.log('Тип маркировки:', newMarkType );
     setMarkingType(newMarkType);
@@ -40,9 +44,8 @@ const First = ({ onQuantityChange }) => {
         <PickUp />
         <CargoVolume onCargoVolumeChange={handleCargoVolumeChange}/>
         <Marking onMarkingChange={handleMarkingChange}/>
-        <div>
-          Цена за маркировку: {calculatedValue}
-        </div>
+        <div>Цена за маркировку: {calculatedValue}</div>
+        <div>Объем товара: {calculatedVolume}</div>
     </div>
     
     

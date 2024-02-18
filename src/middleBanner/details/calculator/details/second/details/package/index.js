@@ -4,20 +4,30 @@ import ZipMenu from './details/zipMenu';
 const Package = ({ onPackageSelect }) => {
   const [ selectedPackage, setSelectedPackage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
+  const [isBubbleWrapButtonPressed, setIsBubbleWrapButtonPressed] = useState(false);
+
 
   const handleButtonClick = (value) => {
     setSelectedPackage(value);
     onPackageSelect(value);
+
     if (value === 'zip') {
       setShowMenu(true);
     } else {
       setShowMenu(false);
     }
-  }
+    if (value === 'bubbleWrap') {
+      setIsBubbleWrapButtonPressed(true);
+    } else {
+      setIsBubbleWrapButtonPressed(false);
+    }
+  };
+
+
   const handleSizeSelect = (size) => {
     console.log(`Выбран размер: ${size}`);
     setShowMenu(false);
-  }
+  };
 
   return (
     <div className='flex flex-col items-start mt-[10px]'>

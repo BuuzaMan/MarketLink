@@ -7,14 +7,14 @@ import Tag from './details/tag';
 import useQualityPrice from './details/hooks/qualityPrice';
 import useAttachmentCost from './details/hooks/attachmentCost';
 import useTagPrice from './details/hooks/tagPrice';
+import useBubbleWrapCost from './details/hooks/packageCost/BubbleWrap';
 
 
-const Second = ({ quantity }) => {
+const Second = ({ quantity, sizeData }) => {
   const { price: updatedPrice, updateControlType } = useQualityPrice(quantity);
   const [selectedOption, setSelectedOption] = React.useState('');
   const [tagAttached, setTagAttached] = React.useState('');
   const [selectedPackage, setSelectedPackage] = React.useState('');
-
   const handleAttachmentSelect = (option) => {
     setSelectedOption(option);
   };
@@ -29,6 +29,7 @@ const Second = ({ quantity }) => {
     setSelectedPackage(packageType);
     console.log(packageType)
   };
+  const bubbleWrapCost = useBubbleWrapCost(sizeData, quantity, selectedPackage === 'bubbleWrap');
 
 
   return (
@@ -42,6 +43,7 @@ const Second = ({ quantity }) => {
         <div>Цена за проверку на брак: {updatedPrice}</div>
         <div>Стоимость вложения: {attachmentCost}</div>
         <div>Стоимость бирки: {tagPrice}</div>
+        <div>Пупырка: {bubbleWrapCost}</div>
     </div>
   );
 };

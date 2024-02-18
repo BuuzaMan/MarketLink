@@ -10,10 +10,14 @@ import PinkBig from '../../../svg/pinkBig';
 
 let Calculator = () => {
   const [quantity, setQuantity] = useState(0);
+  const [sizeData, setSizeData] = useState(null);
 
   const handleQuantityChange = (newQuantityObject) => {
     const newQuantity = newQuantityObject.quantity || 0;
     setQuantity(Number(newQuantity));
+  };
+  const handleSizeChange = (newSizeData) => {
+    setSizeData(newSizeData);
   };
 
   return (
@@ -21,8 +25,8 @@ let Calculator = () => {
         <div className='flex font-sfpro font-medium text-[64px] leading-[4rem]'>Рассчитать стоимость поставки</div>
         <div className='flex flex-col relative overflow-hidden items-start w-[1198px] h-[650px] rounded-2xl mt-[40px]'>
           <div className='flex flex-row rounded-xl bg-[#FEFEFE] w-[1145px] h-[500px] mt-[25px] ml-[27px] z-40 #FEFEFE'>
-            <First onQuantityChange={handleQuantityChange} />
-            <Second quantity={quantity}/>
+            <First onQuantityChange={handleQuantityChange} onSizeChange={handleSizeChange}/>
+            <Second quantity={quantity}  sizeData={sizeData}/>
             <Third />
           </div>
           <div className='flex flex-row z-40 mt-[10px]'>
