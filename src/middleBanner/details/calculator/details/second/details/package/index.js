@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import ZipMenu from './details/zipMenu';
 
-const Package = ({ onPackageSelect }) => {
+const Package = ({ onPackageSelect, onSizeChange, onReset }) => {
   const [ selectedPackage, setSelectedPackage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [isBubbleWrapButtonPressed, setIsBubbleWrapButtonPressed] = useState(false);
+  const [selectedSize, setSelectedSize] = useState('');
 
 
   const handleButtonClick = (value) => {
     setSelectedPackage(value);
-    onPackageSelect(value);
-
+    onPackageSelect({ packageType: value, size: selectedSize });
+    if (selectedPackage !== value) {
+      onReset();
+      setSelectedSize('');
+    }
     if (value === 'zip') {
       setShowMenu(true);
     } else {
@@ -22,11 +26,10 @@ const Package = ({ onPackageSelect }) => {
       setIsBubbleWrapButtonPressed(false);
     }
   };
-
-
   const handleSizeSelect = (size) => {
-    console.log(`Выбран размер: ${size}`);
     setShowMenu(false);
+    setSelectedSize(size);
+    onSizeChange(size); 
   };
 
   return (
