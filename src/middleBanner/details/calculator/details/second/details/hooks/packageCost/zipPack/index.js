@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useZipPackageCost = (size, quantity) => {
+const useZipPackageCost = (size, quantity, packageType) => {
   const [zipPackageCost, setZipPackageCost] = useState(0);
 
   useEffect(() => {
@@ -16,14 +16,14 @@ const useZipPackageCost = (size, quantity) => {
       '50*70': 27,
     };
 
-    if (sizeCoefficients[size]) {
+    if (packageType === 'zip' && sizeCoefficients[size]) {
       const costMultiplier = sizeCoefficients[size];
       const totalCost = quantity * costMultiplier;
       setZipPackageCost(totalCost);
     } else {
       setZipPackageCost(0);
     }
-  }, [size, quantity]);
+  }, [size, quantity, packageType]);
 
   return zipPackageCost;
 };

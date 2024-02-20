@@ -39,8 +39,8 @@ const Second = ({ quantity, sizeData }) => {
   const handleSizeChange = (size) => {
     setSelectedSize(size);
   };
-  const bubbleWrapCost = useBubbleWrapCost(sizeData, quantity, selectedPackage === 'bubbleWrap');
-  const zipPackageCost = useZipPackageCost(selectedSize, quantity);
+  const bubbleWrapCost = useBubbleWrapCost(sizeData, quantity, selectedPackage);
+  const zipPackageCost = useZipPackageCost(selectedSize, quantity,selectedPackage);
   const handleReset = () => {
     setSelectedOption('');
     setTagAttached('');

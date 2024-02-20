@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react';
 
-const useBubbleWrapCost = (sizeData, quantity, isBubbleWrapButtonPressed) => {
+const useBubbleWrapCost = (sizeData, quantity, packageType) => {
   const [bubbleWrapCost, setBubbleWrapCost] = useState(0);
 
   useEffect(() => {
-    if (isBubbleWrapButtonPressed && sizeData && quantity) {
+    if (packageType === 'bubbleWrap' && sizeData && quantity) {
       const numericWidth = Number(sizeData.width);
       const numericHeight = Number(sizeData.height);
       const numericQuantity = Number(quantity);
 
       const X = (numericWidth + numericHeight) * 2 + 5;
       let costMultiplier = 0;
-    
 
       if (X >= 25 && X <= 30) {
         costMultiplier = 21;
@@ -27,8 +26,10 @@ const useBubbleWrapCost = (sizeData, quantity, isBubbleWrapButtonPressed) => {
 
       const totalCost = numericQuantity * costMultiplier;
       setBubbleWrapCost(totalCost);
+    } else {
+      setBubbleWrapCost(0);
     }
-  }, [sizeData, quantity, isBubbleWrapButtonPressed]);
+  }, [sizeData, quantity, packageType]);
 
   return bubbleWrapCost;
 };
