@@ -28,6 +28,8 @@ const First = ({ onQuantityChange, onSizeChange }) => {
     onSizeChange(newSizeData)
   };
   const calculatedVolume = useVolumeCalculation(sizeData);
+
+
   const handleMarkingChange = (newMarkType) => {
     console.log('Тип маркировки:', newMarkType );
     setMarkingType(newMarkType);

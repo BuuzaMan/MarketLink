@@ -1,18 +1,22 @@
 import React, { useState } from 'react'
 
-const Warehouse = () => {
+
+const Warehouse = ({ onMarketplaceSelect, onWarehouseSelect }) => {
   const [selectedMarketplace, setSelectedMarketplace] = useState('ВБ');
   const [showWarehouseBlock, setShowWarehouseBlock] = useState(false);
   const [selectedWarehouse, setSelectedWarehouse] = useState('');
+  
 
   const handleMarketplaceSelect = (marketplace) => {
     setSelectedMarketplace(marketplace);
     setShowWarehouseBlock(marketplace === 'ВБ');
     setSelectedWarehouse('');
+    onMarketplaceSelect(marketplace);
   };
 
   const handleWarehouseSelect = (warehouse) => {
     setSelectedWarehouse(warehouse);
+    onWarehouseSelect(warehouse);
   };
   return (
     <div>

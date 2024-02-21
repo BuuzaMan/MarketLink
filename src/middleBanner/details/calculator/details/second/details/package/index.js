@@ -4,7 +4,6 @@ import ZipMenu from './details/zipMenu';
 const Package = ({ onPackageSelect, onSizeChange, onReset }) => {
   const [ selectedPackage, setSelectedPackage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
-  const [isBubbleWrapButtonPressed, setIsBubbleWrapButtonPressed] = useState(false);
   const [selectedSize, setSelectedSize] = useState('');
 
 
@@ -20,11 +19,7 @@ const Package = ({ onPackageSelect, onSizeChange, onReset }) => {
     } else {
       setShowMenu(false);
     }
-    if (value === 'bubbleWrap') {
-      setIsBubbleWrapButtonPressed(true);
-    } else {
-      setIsBubbleWrapButtonPressed(false);
-    }
+  
   };
   const handleSizeSelect = (size) => {
     setShowMenu(false);

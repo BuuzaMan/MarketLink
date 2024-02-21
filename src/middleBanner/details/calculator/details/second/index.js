@@ -9,6 +9,8 @@ import useAttachmentCost from './details/hooks/attachmentCost';
 import useTagPrice from './details/hooks/tagPrice';
 import useBubbleWrapCost from './details/hooks/packageCost/BubbleWrap';
 import useZipPackageCost from './details/hooks/packageCost/zipPack';
+import useSealedPackCost from './details/hooks/packageCost/sealedPack';
+import useBoppCost from './details/hooks/packageCost/boppPack';
 
 
 const Second = ({ quantity, sizeData }) => {
@@ -22,25 +24,27 @@ const Second = ({ quantity, sizeData }) => {
     setSelectedOption(option);
   };
   const attachmentCost = useAttachmentCost(quantity, selectedOption);
+  console.log(attachmentCost)
   
   
   const handleTagAttachedChange = (value) => {
     setTagAttached(value);
   };
   const tagPrice = useTagPrice(quantity, tagAttached);
+  console.log(tagPrice)
 
 
   const handlePackageSelect = ({ packageType, size }) => {
     setSelectedPackage(packageType);
     setSelectedSize(size);
-    console.log(packageType);
-    console.log(size);
   };
   const handleSizeChange = (size) => {
     setSelectedSize(size);
   };
   const bubbleWrapCost = useBubbleWrapCost(sizeData, quantity, selectedPackage);
   const zipPackageCost = useZipPackageCost(selectedSize, quantity,selectedPackage);
+  const sealedPackageCost = useSealedPackCost(sizeData, quantity, selectedPackage);
+  const boppPackCost = useBoppCost(selectedPackage, quantity)
   const handleReset = () => {
     setSelectedOption('');
     setTagAttached('');
@@ -57,6 +61,8 @@ const Second = ({ quantity, sizeData }) => {
         <div>Брак {updatedPrice}</div>
         <div>Пупырка: {bubbleWrapCost}</div>
         <div>Стоимость ЗИП-пакета:{zipPackageCost}</div>
+        <div>Рукав: {sealedPackageCost}</div>
+        <div>БОПП: {boppPackCost}</div>
     </div>
   );
 };
