@@ -4,32 +4,32 @@ const useWildberries = (volume, selectedMarketplace, selectedWarehouse) => {
   const [deliveryCost, setDeliveryCost] = useState(0);
 
   useEffect(() => {
+    const boxVol = volume + (volume * 0.03)
+    let box = 96000 / boxVol;
+    const roundedBox = Math.ceil(box);
+  
+
     const calculateDeliveryCost = () => {
-      if (selectedMarketplace === 'wildberries') {
-        let baseCost = 96000;
-        const Y = volume + (volume * 0.03);
-        console.log(volume)
-        const box = baseCost / Y;
-        const roundedBox = Math.ceil(box);
-     
-        if (selectedWarehouse === 'Коледино') {
-          setDeliveryCost(roundedBox * 200);
-        } else if (selectedWarehouse === 'Электросталь') {
-          setDeliveryCost(roundedBox * 200);
-        } else if (selectedWarehouse === 'Алексин') {
-          setDeliveryCost(roundedBox * 400);
-        } else if (selectedWarehouse === 'Казань' || selectedWarehouse === 'Уткина Заводь') {
-          setDeliveryCost(roundedBox * 700);
-        } else {
-          setDeliveryCost(0);
-        }
-      } else {
-        setDeliveryCost(0);
+      let cost = 0;
+
+      if (selectedMarketplace === 'ВБ' && selectedWarehouse === 'Коледино') {
+        cost = roundedBox * 200;
+      } else if (selectedMarketplace === 'ВБ' && selectedWarehouse === 'Электросталь') {
+        cost = roundedBox * 200;
+      } else if (selectedMarketplace === 'ВБ' && selectedWarehouse === 'Алексин') {
+        cost = roundedBox * 400;
+      } else if (selectedMarketplace === 'ВБ' && selectedWarehouse === 'Казань') {
+        cost = roundedBox * 700;
+      } else if (selectedMarketplace === 'ВБ' && selectedWarehouse === 'Уткина Заводь') {
+        cost = roundedBox * 700;
       }
+
+      setDeliveryCost(cost);
     };
 
     calculateDeliveryCost();
   }, [volume, selectedMarketplace, selectedWarehouse]);
+
 
   return deliveryCost;
 };
