@@ -5,36 +5,44 @@ import PickUp from './details/pickup';
 import CargoVolume from './details/cargoVolume';
 import Marking from './details/marking';
 import StepOne from './details/stepOne';
-import useCustomHook from './details/hooks/markHook';
-import useVolumeCalculation from './details/hooks/volumeHook';
+import useMarkHook from './details/hooks/markHook';
 
 
-const First = ({ onQuantityChange, onSizeChange }) => {  
+const First = ({ 
+  onQuantityChange, 
+  onSizeChange, 
+  onVolumePriceChange, 
+  onCalculatedValueChange }) => { 
+  //Задаем состояние количества товара 
   const [quantity, setQuantity] = React.useState(0);
+  //Задаем состояние маркировки
   const [markingType, setMarkingType] = React.useState('')
+  //Задаем состояние размеров(длина, ширина, высота)
   const [sizeData, setSizeData] = React.useState({ length: '', width: '', height: '' });
 
-
+  //Цена за объем груза
   const handleCargoVolumeChange = (volumePrice) => {
-    console.log('Цена за объем:', volumePrice);
+    onVolumePriceChange(volumePrice);
   };
+  //Задаем значение количества товара
   const handleQuantityChange = (newQuantityObject) => {
     const newQuantity = newQuantityObject.quantity || 0;
     setQuantity(Number(newQuantity));
     onQuantityChange(newQuantityObject); 
   };
+  //Задаем значения высоты ширины и длины
   const handleSizeChange = (newSizeData) => {
     setSizeData(newSizeData);
     onSizeChange(newSizeData)
-  };
-  const calculatedVolume = useVolumeCalculation(sizeData);
-
-
+  }
+  //Задаем значение типа маркировки
   const handleMarkingChange = (newMarkType) => {
-    console.log('Тип маркировки:', newMarkType );
     setMarkingType(newMarkType);
+
   };
-  const calculatedValue = useCustomHook(quantity, markingType);
+  //Расчитываем стоимость от типа маркировки
+  const calculatedValue = useMarkHook(quantity, markingType);
+  onCalculatedValueChange(calculatedValue);
 
   return (
     <div className='flex flex-col mt-[17px] ml-[35px] w-[336px] h-[419px]'>
@@ -46,8 +54,6 @@ const First = ({ onQuantityChange, onSizeChange }) => {
         <PickUp />
         <CargoVolume onCargoVolumeChange={handleCargoVolumeChange}/>
         <Marking onMarkingChange={handleMarkingChange}/>
-        <div>Цена за маркировку: {calculatedValue}</div>
-        <div>Объем товара: {calculatedVolume}</div>
     </div>
     
     

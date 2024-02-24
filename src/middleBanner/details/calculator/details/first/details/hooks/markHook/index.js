@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useCustomHook = (quantity, markingType) => {
+const useMarkHook = (quantity, markingType) => {
   const [calculatedValue, setCalculatedValue] = useState(0);
 
   useEffect(() => {
@@ -9,7 +9,6 @@ const useCustomHook = (quantity, markingType) => {
 
     if (isValidQuantity && isValidMarkingType) {
       const result = markingType === 'single' ? quantity * 7 : quantity * 10;
-      console.log('result:', result);
       setCalculatedValue(result);
     } else {
       setCalculatedValue(0);
@@ -20,4 +19,4 @@ const useCustomHook = (quantity, markingType) => {
   return calculatedValue;
 };
 
-export default useCustomHook;
+export default useMarkHook;

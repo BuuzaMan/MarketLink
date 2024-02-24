@@ -1,27 +1,19 @@
 import { useState, useEffect } from 'react';
 
-const useQualityPrice = (initialQuantity) => {
+const useQualityPrice = (initialQuantity, qualityControlOption) => {
   const [price, setPrice] = useState(0);
-  const [controlType, setControlType] = useState('0');
 
   useEffect(() => {
-    if (controlType === 'visual') {
+    if (qualityControlOption === 'visual') {
       setPrice(initialQuantity * 9);
-    } else if (controlType === 'detailed') {
+    } else if (qualityControlOption === 'detailed') {
       setPrice(initialQuantity * 20);
     } else {
       setPrice(0);
     }
-  }, [controlType, initialQuantity]);
+  }, [qualityControlOption, initialQuantity]);
 
-  const updateControlType = (newControlType) => {
-    setControlType(newControlType);
-  };
-
-  return {
-    price,
-    updateControlType,
-  };
+  return price;
 };
 
 export default useQualityPrice;

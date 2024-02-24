@@ -13,27 +13,55 @@ import useSealedPackCost from './details/hooks/packageCost/sealedPack';
 import useBoppCost from './details/hooks/packageCost/boppPack';
 
 
-const Second = ({ quantity, sizeData }) => {
-  const { price: updatedPrice, updateControlType } = useQualityPrice(quantity);
+const Second = ({ 
+  quantity, 
+  sizeData,
+  onBoppPackCostChange,
+  onBubbleWrapCostChange,
+  onSealedPackCostChange,
+  onZipPackCostChange,
+  onAttachCostChange,
+  onTagPriceChange,
+  onQualityCostChange
+ }) => {
+  //Установка состояния проверки на брак
+  const [qualityControlOption, setQualityControlOption] = React.useState('');
+  //Установка состояния вложения
   const [selectedOption, setSelectedOption] = React.useState('');
+  //Установка состояния бирки
   const [tagAttached, setTagAttached] = React.useState('');
+  //Установка состояния выбранной упаковки
   const [selectedPackage, setSelectedPackage] = React.useState('');
+  //Установка состояния выбранного размера воздушно-пузырчатой пленки
   const [selectedSize, setSelectedSize] = React.useState('');
-  
+
+  //выбор вложения
   const handleAttachmentSelect = (option) => {
     setSelectedOption(option);
   };
+  //цена за вложение
   const attachmentCost = useAttachmentCost(quantity, selectedOption);
-  console.log(attachmentCost)
-  
-  
+  onAttachCostChange(attachmentCost)
+   
+  //выбор бирки
   const handleTagAttachedChange = (value) => {
     setTagAttached(value);
   };
+  //цена за бирку
   const tagPrice = useTagPrice(quantity, tagAttached);
-  console.log(tagPrice)
+  onTagPriceChange(tagPrice)
 
+  //Выбор проверки на брак
+  const handleQualityControlChange = (option) => {
+    setQualityControlOption(option);
+  };
+   //цена за проверку на брак
+   const qualityCost = useQualityPrice(quantity, qualityControlOption);
+   onQualityCostChange(qualityCost)
 
+  
+
+  //выбор упаковки и размера у воздушно-пузырчатой пленки
   const handlePackageSelect = ({ packageType, size }) => {
     setSelectedPackage(packageType);
     setSelectedSize(size);
@@ -41,10 +69,20 @@ const Second = ({ quantity, sizeData }) => {
   const handleSizeChange = (size) => {
     setSelectedSize(size);
   };
+
+  //цена за воздушно-пузырчатую пленку
   const bubbleWrapCost = useBubbleWrapCost(sizeData, quantity, selectedPackage);
-  const zipPackageCost = useZipPackageCost(selectedSize, quantity,selectedPackage);
+  onBubbleWrapCostChange(bubbleWrapCost);
+  //цена за зип-пакет
+  const zipPackageCost = useZipPackageCost(selectedSize, quantity, selectedPackage);
+  onZipPackCostChange(zipPackageCost);
+  //цена за запаянный рукав
   const sealedPackageCost = useSealedPackCost(sizeData, quantity, selectedPackage);
+  onSealedPackCostChange(sealedPackageCost);
+  //цена за бопп-пакет
   const boppPackCost = useBoppCost(selectedPackage, quantity)
+  onBoppPackCostChange(boppPackCost);
+
   const handleReset = () => {
     setSelectedOption('');
     setTagAttached('');
@@ -54,15 +92,10 @@ const Second = ({ quantity, sizeData }) => {
   return (
     <div className='flex flex-col mt-[17px] ml-[28px]'>
         <StepTwo />
-        <QualityControl onControlChange={updateControlType} />
+        <QualityControl onControlChange={handleQualityControlChange} />
         <Package onPackageSelect={handlePackageSelect} onSizeChange={handleSizeChange} onReset={handleReset}/>
         <Attachment onOptionSelect={handleAttachmentSelect}/>
         <Tag onTagAttachedChange={handleTagAttachedChange} />
-        <div>Брак {updatedPrice}</div>
-        <div>Пупырка: {bubbleWrapCost}</div>
-        <div>Стоимость ЗИП-пакета:{zipPackageCost}</div>
-        <div>Рукав: {sealedPackageCost}</div>
-        <div>БОПП: {boppPackCost}</div>
     </div>
   );
 };
