@@ -5,10 +5,11 @@ import useDeliveryCostCalculation from './details/hooks/other';
 import useWildberries from './details/hooks/wildberries/index';
 
 
-const Third = ( sizeData,onTotalChange ) => {
-  const volume = useVolumeCalculation(sizeData.sizeData);
+const Third = ({ sizeData, onTotalChange }) => {
+  const volume = useVolumeCalculation(sizeData);
   const [selectedMarketplace, setSelectedMarketplace] = useState('');
   const [selectedWarehouse, setSelectedWarehouse] = useState('');
+
  
 
   const handleMarketplaceSelect = (marketplace) => {
@@ -18,11 +19,13 @@ const Third = ( sizeData,onTotalChange ) => {
   const handleWarehouseSelect = (warehouse) => {
     setSelectedWarehouse(warehouse);
   };
-  const deliveryCost = useDeliveryCostCalculation(volume, selectedMarketplace);
-  const deliveryPrice = useWildberries(volume, selectedMarketplace, selectedWarehouse);
-  const total = deliveryCost + deliveryPrice
-  onTotalChange(total);
-  console.log(total)
+  const deliveryOther = useDeliveryCostCalculation(volume, selectedMarketplace);
+  const deliveryWild = useWildberries(volume, selectedMarketplace, selectedWarehouse);
+  const total = deliveryOther + deliveryWild;
+  onTotalChange(total)
+ 
+  
+ 
 
   return (
     <div className='flex flex-col mt-[17px] ml-[29px]'>

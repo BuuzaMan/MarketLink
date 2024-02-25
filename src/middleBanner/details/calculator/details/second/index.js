@@ -49,7 +49,7 @@ const Second = ({
   };
   //цена за бирку
   const tagPrice = useTagPrice(quantity, tagAttached);
-  onTagPriceChange(tagPrice)
+  onTagPriceChange(tagPrice);
 
   //Выбор проверки на брак
   const handleQualityControlChange = (option) => {
@@ -57,7 +57,7 @@ const Second = ({
   };
    //цена за проверку на брак
    const qualityCost = useQualityPrice(quantity, qualityControlOption);
-   onQualityCostChange(qualityCost)
+   onQualityCostChange(qualityCost);
 
   
 
@@ -80,7 +80,7 @@ const Second = ({
   const sealedPackageCost = useSealedPackCost(sizeData, quantity, selectedPackage);
   onSealedPackCostChange(sealedPackageCost);
   //цена за бопп-пакет
-  const boppPackCost = useBoppCost(selectedPackage, quantity)
+  const boppPackCost = useBoppCost(selectedPackage, quantity);
   onBoppPackCostChange(boppPackCost);
 
   const handleReset = () => {

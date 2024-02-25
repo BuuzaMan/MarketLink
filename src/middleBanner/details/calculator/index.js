@@ -6,26 +6,23 @@ import Button from '../button';
 import BigBlueEl from '../../../svg/bigBlueEl';
 import PinkBig from '../../../svg/pinkBig';
 
-
-
-
 let Calculator = () => {
   //Создаем локальные состояния, передаваемые из дочерних компонентов
   const [quantity, setQuantity] = useState(0);
-  const [sizeData, setSizeData] = useState(null);
-  const [volumeCost, setVolumeCost] = useState('');
-  const [markPrice, setMarkPrice] = useState('');
-  const [bubbleCost, setBubbleCost] = useState('');
-  const [zipPackCost, setZipPackCost] = useState('');
-  const [sealedPackCost, setSealedPackCost] = useState('');
-  const [boppPackageCost, setBoppPackageCost] = useState('');
-  const [attachCost, setAttachCost] = useState('');
-  const [tagCost, setTagCost] = useState('');
-  const [qualityPrice, setQualityPrice] = useState('');
-  const [newTotal, setNewTotal] = useState(0);
-
-
-
+  const [sizeData, setSizeData] = useState(0);
+  const [volumeCost, setVolumeCost] = useState(0);
+  const [markPrice, setMarkPrice] = useState(0);
+  const [bubbleCost, setBubbleCost] = useState(0);
+  const [zipPackCost, setZipPackCost] = useState(0);
+  const [sealedPackCost, setSealedPackCost] = useState(0);
+  const [boppPackageCost, setBoppPackageCost] = useState(0);
+  const [attachCost, setAttachCost] = useState(0);
+  const [tagCost, setTagCost] = useState(0);
+  const [qualityPrice, setQualityPrice] = useState(0);
+  const [totalDeliveryPrice, setDeliveryPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [totalPackCost, setTotalPackCost] = useState(0);
+ 
 
 //Присваиваем состояния дочерних компонентов к локальному состоянию
   const handleQuantityChange = (newQuantityObject) => {
@@ -62,10 +59,13 @@ let Calculator = () => {
   const handleQualityCostChange = (qualityCost) => {
     setQualityPrice(qualityCost);
   };
-  const updateTotal = (total) => {
-    setNewTotal(total);
+  const handleTotalChange = (total) => {
+    setDeliveryPrice(total)
   };
-  
+  //вычисляем общую стоимость упаковки
+  useEffect(() => {setTotalPackCost(boppPackageCost + bubbleCost + sealedPackCost + zipPackCost)},[boppPackageCost, bubbleCost, sealedPackCost, zipPackCost])
+  //вычисляем общую стоимость услуг
+  useEffect(()=> {setTotalPrice(volumeCost + markPrice + totalPackCost + attachCost + tagCost + qualityPrice + totalDeliveryPrice)},[volumeCost, markPrice, totalPackCost, attachCost,tagCost,qualityPrice,totalDeliveryPrice])
 
   return (
     <div className='flex container flex-col w-[1198px] mt-[120px] mx-auto items-center'>
@@ -91,16 +91,16 @@ let Calculator = () => {
             />
             <Third 
               sizeData={sizeData}
-              onTotalChange={updateTotal}
+              onTotalChange={handleTotalChange}
             />
           </div>
           <div className='flex flex-row z-40 mt-[10px]'>
-            <div className='flex font-sfpro mt-[18px] ml-[35px]'>
-              <div className='text-[40px] font-normal leading-[5.6rem]'>от&nbsp;</div>
-              <div className='text-[64px] font-bold leading-[4rem]'>44,990₽</div>
+            <div className='flex font-sfpro mt-[12px] ml-[35px] w-[304px]'>
+              <div className='text-[40px] font-normal leading-[5.2rem]'>от&nbsp;</div>
+              <div className='text-[64px] font-bold leading-[4rem]'>{totalPrice}₽</div>
             </div>
-            <div className='w-[157px] h-[52px] ml-[27px] font-sfpro text-[17.438px] font-medium leading-[1.625rem] text-left mt-[24px] z-40'>Примерная стоимость без НДС</div>
-            <div className='mt-[20px] ml-[395px] z-40'><Button /></div>
+            <div className='w-[157px] h-[52px] ml-[27px] font-sfpro text-[17.438px] font-medium leading-[1.625rem] text-left mt-[18px] z-40'>Примерная стоимость без НДС</div>
+            <div className='mt-[20px] ml-[390px] z-40'><Button /></div>
           </div>
           <div className='flex absolute z-0 top-[207px] left-[173px] blur-[800px]'><BigBlueEl /></div>
           <div className='flex absolute z-20 top-[200px] left-[200px] blur-[300px]'><PinkBig /></div>
