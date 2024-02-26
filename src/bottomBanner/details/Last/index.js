@@ -3,7 +3,7 @@ import Mosaic from './details/mosaic';
 
 const Last = () => {
   return (
-    <div className='flex w-[1208px] items-center mt-[120px] font-sfpro gap-x-6'>
+    <div className='flex w-[1208px] items-center mt-[120px] font-sfpro gap-x-6'id="about">
         <div><Mosaic /></div>
         <div className='flex flex-col w-[592px] h-[560px]'>
             <div className='font-medium text-[48px] leading-[3rem] -tracking-[.06em] w-[553px] h-[144px]'>Фулфилмент, который создан селлерами для селлеров</div>

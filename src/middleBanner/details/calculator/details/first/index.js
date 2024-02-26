@@ -7,7 +7,6 @@ import Marking from './details/marking';
 import StepOne from './details/stepOne';
 import useMarkHook from './details/hooks/markHook';
 
-
 const First = ({ 
   onQuantityChange, 
   onSizeChange, 
@@ -19,6 +18,7 @@ const First = ({
   const [markingType, setMarkingType] = React.useState('')
   //Задаем состояние размеров(длина, ширина, высота)
   const [sizeData, setSizeData] = React.useState({ length: '', width: '', height: '' });
+  console.log(sizeData)
 
   //Цена за объем груза
   const handleCargoVolumeChange = (volumePrice) => {
@@ -38,7 +38,6 @@ const First = ({
   //Задаем значение типа маркировки
   const handleMarkingChange = (newMarkType) => {
     setMarkingType(newMarkType);
-
   };
   //Расчитываем стоимость от типа маркировки
   const calculatedValue = useMarkHook(quantity, markingType);

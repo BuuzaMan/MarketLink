@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Marking = ({ onMarkingChange }) => {
-  const [isMarked, setIsMarked] = useState(false);
+  const [isMarked, setIsMarked] = useState('');
   const [selectedMark, setSelectedMark] = useState('');
 
   const handleMarkingButtonClick = (markType) => {
@@ -9,7 +9,7 @@ const Marking = ({ onMarkingChange }) => {
     setSelectedMark(markType);
     onMarkingChange(markType);
   };
-
+  
   return (
     <div>
       <div className='flex flex-col items-start mt-[10px]'>

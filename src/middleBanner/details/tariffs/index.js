@@ -8,7 +8,7 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 let Tariffs = () => {
   return (
-    <div className='flex flex-col w-[1208px] items-center mt-[120px]'>
+    <div className='flex flex-col w-[1208px] items-center mt-[120px]' id="tariffs">
         <div className='w-[971px] h-[128px]'>
             <div className='font-sfpro font-medium text-[64px] leading-[4rem] -tracking-[.06em] text-center'>Выгодные тарифы</div>
             <div className='font-sfpro font-medium text-[64px] leading-[4rem] -tracking-[.06em] text-center'>оптимизации вашего бизнеса</div>

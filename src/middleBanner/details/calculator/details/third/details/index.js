@@ -25,17 +25,17 @@ const Warehouse = ({ onMarketplaceSelect, onWarehouseSelect }) => {
             <div className='font-lato font-bold text-[13.005px] leading-[1.118rem]'>На какой маркетплейс планируется отгрузка</div>
             <div className='flex w-[336px] h-[43px] mt-[8px] space-x-[10px]'>
                 <button
-                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedMarketplace === 'ВБ'}`}
+                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedMarketplace === 'ВБ' ? 'bg-black text-white' : 'bg-white text-black'}`}
                     onClick={() => handleMarketplaceSelect('ВБ')}>
                     ВБ
                 </button>
                 <button
-                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedMarketplace === 'Озон'}`}
+                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedMarketplace === 'Озон' ? 'bg-black text-white' : 'bg-white text-black'}`}
                     onClick={() => handleMarketplaceSelect('Озон')}>
                     Озон
                 </button>
                 <button
-                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedMarketplace === 'Яндекс'}`}
+                    className={`flex w-[105px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedMarketplace === 'Яндекс' ? 'bg-black text-white' : 'bg-white text-black'}`}
                     onClick={() => handleMarketplaceSelect('Яндекс')}>
                     Яндекс
                 </button>
@@ -47,31 +47,31 @@ const Warehouse = ({ onMarketplaceSelect, onWarehouseSelect }) => {
                 <div className='font-lato font-bold text-[13.005px] leading-[1.118rem]'>На какой склад планируется отгрузка</div>
                 <div className='flex flex-wrap w-[336px] h-[43px] mt-[8px] gap-x-[8px] gap-y-[8px]'>
                     <button
-                        className={`flex w-[97px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedWarehouse === 'Коледино'}`}
+                        className={`flex w-[97px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedWarehouse === 'Коледино' ? 'bg-black text-white' : 'bg-white text-black'}`}
                         onClick={() => handleWarehouseSelect('Коледино')}
                         >
                         Коледино
                     </button>
                     <button
-                        className={`flex w-[130px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedWarehouse === 'Электросталь'}`}
+                        className={`flex w-[130px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedWarehouse === 'Электросталь' ? 'bg-black text-white' : 'bg-white text-black'}`}
                         onClick={() => handleWarehouseSelect('Электросталь')}
                         >
                         Электросталь
                     </button>
                     <button
-                        className={`flex w-[93px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedWarehouse === 'Алексин'}`}
+                        className={`flex w-[93px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedWarehouse === 'Алексин' ? 'bg-black text-white' : 'bg-white text-black'}`}
                         onClick={() => handleWarehouseSelect('Алексин')}
                         >
                         Алексин
                     </button>
                     <button
-                        className={`flex w-[97px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedWarehouse === 'Казань'}`}
+                        className={`flex w-[97px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedWarehouse === 'Казань' ? 'bg-black text-white' : 'bg-white text-black'}`}
                         onClick={() => handleWarehouseSelect('Казань')}
                         >
                         Казань
                     </button>
                     <button
-                        className={`flex w-[130px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out bg-white text-black focus:outline-none focus:bg-black focus:text-white ${selectedWarehouse === 'Уткина Заводь'}`}
+                        className={`flex w-[130px] h-[42px] rounded-md border-[#E8E8E8] border-[0.813px] font-lato text-[14.63px] items-center justify-center transition duration-300 ease-in-out ${selectedWarehouse === 'Уткина Заводь' ? 'bg-black text-white' : 'bg-white text-black'}`}
                         onClick={() => handleWarehouseSelect('Уткина Заводь')}
                         >
                         Уткина Заводь
