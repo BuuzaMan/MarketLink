@@ -9,7 +9,7 @@ const CostType = () => {
             <input
                 type='text'
                 placeholder='0.01'
-                className='desktop:w-[249px] mobile:w-[146px] desktop:h-[64px] mobile:h-[37.4px] z-40 desktop:rounded-[12.173px] mobile:rounded-[7.115px] outline-none placeholder:desktop:pl-[20.26px] placeholder:mobile:pl-[11.84px] placeholder:desktop:pt-[23px] placeholder:mobile:pt-[10px] placeholder:desktop:text-[16px] placeholder:mobile:text-[10px] placehodler:text-[#898989] desktop:mt-[13px] mobile:mt-[9.79px]'
+                className='desktop:w-[249px] mobile:w-[146px] desktop:h-[64px] mobile:h-[37.4px] z-40 desktop:rounded-[12.173px] mobile:rounded-[7.115px] outline-none placeholder:desktop:pl-[20.26px] placeholder:mobile:pl-0 placeholder:desktop:pt-[23px] placeholder:mobile:pt-[10px] placeholder:desktop:text-[16px] placeholder:mobile:text-[10px] placehodler:text-[#898989] desktop:mt-[13px] mobile:mt-[9.79px] mobile:pl-[11.84px]'
                 >
             </input>
         </div>
