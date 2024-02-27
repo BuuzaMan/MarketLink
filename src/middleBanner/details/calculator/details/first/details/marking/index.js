@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
-const Marking = ({ onMarkingChange }) => {
+const Marking = ({ onMarkingChange, onMarkChoose }) => {
   const [isMarked, setIsMarked] = useState('');
   const [selectedMark, setSelectedMark] = useState('');
 
@@ -9,6 +9,13 @@ const Marking = ({ onMarkingChange }) => {
     setSelectedMark(markType);
     onMarkingChange(markType);
   };
+  const handleIsMarkedChange = useCallback(() => {
+    onMarkChoose(isMarked);
+  }, [isMarked, onMarkChoose]);
+  
+  useEffect(() => {
+    handleIsMarkedChange();
+  }, [handleIsMarkedChange]);
   
   return (
     <div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Quantity from './details/quantity';
 import Size from './details/size';
 import PickUp from './details/pickup';
@@ -18,7 +18,7 @@ const First = ({
   const [markingType, setMarkingType] = React.useState('')
   //Задаем состояние размеров(длина, ширина, высота)
   const [sizeData, setSizeData] = React.useState({ length: '', width: '', height: '' });
-  console.log(sizeData)
+  const [isMarked, setIsMarked] = useState('')
 
   //Цена за объем груза
   const handleCargoVolumeChange = (volumePrice) => {
@@ -38,9 +38,13 @@ const First = ({
   //Задаем значение типа маркировки
   const handleMarkingChange = (newMarkType) => {
     setMarkingType(newMarkType);
+    console.log(newMarkType)
   };
+  const handleMarkChoose = (newIsMarked) => {
+    setIsMarked(newIsMarked)
+  }
   //Расчитываем стоимость от типа маркировки
-  const calculatedValue = useMarkHook(quantity, markingType);
+  const calculatedValue = useMarkHook(quantity, markingType, isMarked);
   onCalculatedValueChange(calculatedValue);
 
   return (
@@ -52,7 +56,8 @@ const First = ({
         </div>
         <PickUp />
         <CargoVolume onCargoVolumeChange={handleCargoVolumeChange}/>
-        <Marking onMarkingChange={handleMarkingChange}/>
+        <Marking onMarkingChange={handleMarkingChange} onMarkChoose={handleMarkChoose}/>
+        <div>{isMarked}</div>
     </div>
     
     
