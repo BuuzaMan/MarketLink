@@ -15,6 +15,9 @@ const Discount = () => {
             <div className='absolute desktop:w-[500px] mobile:w-[400px] desktop:h-[500px] mobile:h-[400px] desktop:top-[10px] desktop:left-[50px] mobile:-left-[30px] mobile:-top-[50px] desktop:blur-[150px] mobile:blur-[150px] z-10'><Blue316 /></div>
             <div className='absolute desktop:w-[555px] mobile:w-[555px] desktop:h-[555px] mobile:h-[600px] desktop:top-[190px] mobile:-top-[70px] desktop: mobile:left-[250px] desktop:blur-[120px] mobile:blur-[150px] z-0'><YellowCircle /></div>
         </div>
+        <div className='absolute desktop:w-[68.565px] mobile:w-[40.073px] desktop:h-[592px] mobile:h-[346px] backdrop-filter backdrop-blur-[19px] desktop:left-[385px] mobile:left-[225.02px] z-30 shadow-[0px_0.742px_1.484px_0px_rgba(255,255,255,0.16)]' />
+        <div className='absolute desktop:w-[68.565px] mobile:w-[40.073px] desktop:h-[592px] mobile:h-[346px] backdrop-filter backdrop-blur-[19px] desktop:left-[453.56px] mobile:left-[265.09px] z-30 shadow-[0px_0.742px_1.484px_0px_rgba(255,255,255,0.16)]'/>
+        <div className='absolute desktop:w-[68.565px] mobile:w-[40.073px] desktop:h-[592px] mobile:h-[346px] backdrop-filter backdrop-blur-[19px] desktop:left-[522.13px] mobile:left-[305.16px] z-30 shadow-[0px_0.742px_1.484px_0px_rgba(255,255,255,0.16)]'/>
     </div>
   )
 }
